@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+  # Container della vittima - simulerà un utente normale che naviga
+  victim:
+    build: 
+      context: ./victim
+      dockerfile: Dockerfile
+    networks:
+      mitm_net:
+        ipv4_address: 172.16.238.10  # IP statico per facilitare l'attacco
+    cap_add:
+      - NET_ADMIN  # Necessario per modificare la configurazione di rete
+
+  # Server web vulnerabile - ospita la pagina di login
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    networks:
+      mitm_net:
+        ipv4_address: 172.16.238.20  # IP statico del server
+    ports:
+      - "8080:80"  # Espone la porta 80 del container sulla 8080 dell'host
+
+  # Container dell'attaccante con Bettercap
+  attacker:
+    build:
+      context: ./attacker
+      dockerfile: Dockerfile
+    networks:
+      mitm_net:
+        ipv4_address: 172.16.238.30  # IP statico dell'attaccante
+    ports:
+      - "8081:8081"  # Porta per l'interfaccia web di Bettercap
+      - "8082:8080"  # Porta per il proxy HTTP
+    cap_add:
+      - NET_ADMIN  # Permette la manipolazione della rete
+      - NET_RAW    # Necessario per il packet sniffing
+    volumes:
+      - ./logs:/root/logs  # Volume per persistere i log
+
+# Configurazione della rete Docker isolata
+networks:
+  mitm_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.238.0/24  # Subnet dedicata per l'ambiente di test

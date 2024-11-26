@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Demo</title>
+    <!-- Stili CSS per il form di login -->
+    <style>
+        /* Stile generale della pagina */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        
+        /* Container del form di login */
+        .login-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Stile degli input */
+        input {
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+            width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        /* Stile del pulsante di submit */
+        input[type="submit"] {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        /* Hover effect sul pulsante */
+        input[type="submit"]:hover {
+            background-color: #1557b0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container principale del form -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <!-- Form di login - invia i dati in POST -->
+        <form method="POST">
+            <!-- Campo username -->
+            <input type="text" name="username" placeholder="Username" required>
+            <!-- Campo password -->
+            <input type="password" name="password" placeholder="Password" required>
+            <!-- Pulsante di invio -->
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
