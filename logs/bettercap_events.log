@@ -1,0 +1,2 @@
+[16:17:20] [[32msys.log[0m] [[97m[41merr[0m] error while running caplet [1m/usr/local/share/bettercap/caplets/mitm.cap[0m: [31mmodule events.stream is already running[0m
+[16:37:59] [[32msys.log[0m] [[97m[41merr[0m] error while running caplet [1m/usr/local/share/bettercap/caplets/mitm.cap[0m: [31mmodule events.stream is already running[0m

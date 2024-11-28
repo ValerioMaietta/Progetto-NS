@@ -28,7 +28,9 @@ RUN apk add --no-cache \
     # Dati timezone
     tzdata \
     # Per eventuali script proxy
-    npm
+    npm \
+    # Libreria OpenSSL
+    openssl 
 
 # Imposto il PATH per Go
 ENV PATH="/usr/local/go/bin:${PATH}"

