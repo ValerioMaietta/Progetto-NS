@@ -1,49 +1,79 @@
-version: '3'
+version: '3.8'
 
 services:
-  # Container della vittima - simulerà un utente normale che naviga
-  victim:
-    build: 
-      context: ./victim
-      dockerfile: Dockerfile
-    networks:
-      mitm_net:
-        ipv4_address: 172.16.238.10  # IP statico per facilitare l'attacco
-    cap_add:
-      - NET_ADMIN  # Necessario per modificare la configurazione di rete
-
-  # Server web vulnerabile - ospita la pagina di login
-  server:
-    build:
-      context: ./server
-      dockerfile: Dockerfile
-    networks:
-      mitm_net:
-        ipv4_address: 172.16.238.20  # IP statico del server
+  # Web Server (Nginx)
+  web:
+    build: ./web-server
     ports:
-      - "8080:80"  # Espone la porta 80 del container sulla 8080 dell'host
-
-  # Container dell'attaccante con Bettercap
-  attacker:
-    build:
-      context: ./attacker
-      dockerfile: Dockerfile
+      - '8080:80'
     networks:
-      mitm_net:
-        ipv4_address: 172.16.238.30  # IP statico dell'attaccante
+      - security_network
+
+  # Database (PostgreSQL)
+  db:
+    build: ./database
+    environment:
+      POSTGRES_DB: testdb
+      POSTGRES_USER: testuser
+      POSTGRES_PASSWORD: testpass
     ports:
-      - "8081:8081"  # Porta per l'interfaccia web di Bettercap
-      - "8082:8080"  # Porta per il proxy HTTP
+      - '5432:5432'
+    networks:
+      - security_network
+
+  # Client machine
+  client:
+    build: ./client
+    networks:
+      - security_network
+    depends_on:
+      - web
+      - db
+
+  # Suricata IDS
+  suricata:
+    build: ./suricata
+    network_mode: 'host' # Necessario per il monitoraggio del traffico
     cap_add:
-      - NET_ADMIN  # Permette la manipolazione della rete
-      - NET_RAW    # Necessario per il packet sniffing
+      - NET_ADMIN
+      - SYS_NICE
+      - NET_RAW
     volumes:
-      - ./logs:/root/logs  # Volume per persistere i log
+      - ./suricata/logs:/var/log/suricata
 
-# Configurazione della rete Docker isolata
+  # ELK Stack
+  elasticsearch:
+    build: ./elk/elasticsearch
+    environment:
+      - discovery.type=single-node
+    ports:
+      - '9200:9200'
+    networks:
+      - security_network
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+
+  logstash:
+    build: ./elk/logstash
+    ports:
+      - '5044:5044'
+    networks:
+      - security_network
+    depends_on:
+      - elasticsearch
+
+  kibana:
+    build: ./elk/kibana
+    ports:
+      - '5601:5601'
+    networks:
+      - security_network
+    depends_on:
+      - elasticsearch
+
 networks:
-  mitm_net:
+  security_network:
     driver: bridge
-    ipam:
-      config:
-        - subnet: 172.16.238.0/24  # Subnet dedicata per l'ambiente di test
+
+volumes:
+  es_data:
