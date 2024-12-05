@@ -1,16 +1,28 @@
 FROM ubuntu:20.04
 
-# Evita interazioni durante l'installazione
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Installa Suricata e le dipendenze
-RUN apt-get update && apt-get install -y \
+# Installazione di Suricata e dipendenze
+RUN apt-get update && \
+    apt-get install -y software-properties-common && \
+    add-apt-repository ppa:oisf/suricata-stable && \
+    apt-get update && \
+    apt-get install -y \
     suricata \
+    iproute2 \
+    procps \
     && rm -rf /var/lib/apt/lists/*
 
-# Copia i file di configurazione
+# Crea directory per i log
+RUN mkdir -p /var/log/suricata && \
+    chown -R root:root /var/log/suricata
+
+# Copia dei file di configurazione
 COPY config/suricata.yaml /etc/suricata/
 COPY config/rules/custom.rules /etc/suricata/rules/
 
-# Avvia Suricata in modalità IDS
-CMD ["suricata", "-c", "/etc/suricata/suricata.yaml", "-i", "eth0"]
+# Script di avvio
+COPY start.sh /
+RUN chmod +x /start.sh
+
+ENTRYPOINT ["/start.sh"]

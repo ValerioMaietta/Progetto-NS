@@ -1,7 +1,5 @@
 %YAML 1.1
 ---
-# Configurazione di base di Suricata
-
 vars:
   address-groups:
     HOME_NET: '[192.168.0.0/16,10.0.0.0/8,172.16.0.0/12]'
@@ -11,12 +9,19 @@ default-rule-path: /etc/suricata/rules
 rule-files:
   - custom.rules
 
-outputs:
-  - fast:
-      enabled: yes
-      filename: fast.log
-      append: yes
+af-packet:
+  - interface: eth0
+    cluster-id: 99
+    cluster-type: cluster_flow
+    defrag: yes
+    use-mmap: yes
+    tpacket-v3: yes
+    buffer-size: 32768
+    block-size: 69632
+    ring-size: 2048
+    use-emergency-flush: yes
 
+outputs:
   - eve-log:
       enabled: yes
       filetype: regular
@@ -30,15 +35,21 @@ outputs:
         - ssh
         - flow
 
-af-packet:
-  - interface: eth0
-    cluster-id: 99
-    cluster-type: cluster_flow
-    defrag: yes
-
 app-layer:
   protocols:
     http:
       enabled: yes
     tls:
       enabled: yes
+
+threading:
+  set-cpu-affinity: no
+  cpu-affinity:
+    - management-cpu-set:
+        cpu: [0]
+    - receive-cpu-set:
+        cpu: [0]
+    - worker-cpu-set:
+        cpu: ['all']
+        mode: 'balanced'
+  detect-thread-ratio: 1.0

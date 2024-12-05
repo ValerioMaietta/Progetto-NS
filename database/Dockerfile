@@ -1,4 +1,4 @@
-FROM postgres:13-alpine
+FROM postgres:13
 
 # Copia lo script di inizializzazione
 COPY init.sql /docker-entrypoint-initdb.d/
