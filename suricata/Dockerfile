@@ -1,28 +1,23 @@
+# Usa Ubuntu come base
 FROM ubuntu:20.04
 
+# Evita interazioni durante l'installazione
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Installazione di Suricata e dipendenze
-RUN apt-get update && \
-    apt-get install -y software-properties-common && \
-    add-apt-repository ppa:oisf/suricata-stable && \
-    apt-get update && \
-    apt-get install -y \
-    suricata \
-    iproute2 \
-    procps \
+# Installa Suricata e dipendenze
+RUN apt-get update && apt-get install -y \
+    software-properties-common \
+    && add-apt-repository ppa:oisf/suricata-stable \
+    && apt-get update \
+    && apt-get install -y suricata \
     && rm -rf /var/lib/apt/lists/*
 
+# Copia i file di configurazione
+COPY suricata.yaml /etc/suricata/
+COPY rules/ /etc/suricata/rules/
+
 # Crea directory per i log
-RUN mkdir -p /var/log/suricata && \
-    chown -R root:root /var/log/suricata
+RUN mkdir -p /var/log/suricata
 
-# Copia dei file di configurazione
-COPY config/suricata.yaml /etc/suricata/
-COPY config/rules/custom.rules /etc/suricata/rules/
-
-# Script di avvio
-COPY start.sh /
-RUN chmod +x /start.sh
-
-ENTRYPOINT ["/start.sh"]
+# Avvia Suricata
+CMD ["suricata", "-c", "/etc/suricata/suricata.yaml", "--af-packet"]
