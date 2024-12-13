@@ -1,16 +1,20 @@
 version: '3.8'
 
 services:
-  # Web Server (Nginx)
-  web:
+  # Web Server - Nginx
+  web-server:
     build: ./web-server
     ports:
-      - '8080:80'
+      - '80:80'
     networks:
-      - security_network
+      - frontend
+      - monitoring
+    depends_on:
+      - database
+    container_name: web-server
 
-  # Database (PostgreSQL)
-  db:
+  # Database - PostgreSQL
+  database:
     build: ./database
     environment:
       POSTGRES_DB: testdb
@@ -19,71 +23,87 @@ services:
     ports:
       - '5432:5432'
     networks:
-      - security_network
+      - backend
+      - monitoring
+    container_name: database
 
-  # Client machine
+  # Client machine for testing
   client:
     build: ./client
     networks:
-      - security_network
+      - frontend
+      - backend
     depends_on:
-      - web
-      - db
+      - web-server
+      - database
+    container_name: client
 
   # Suricata IDS
   suricata:
     build: ./suricata
-    network_mode: 'host'
+    networks:
+      - frontend
+      - backend
+      - monitoring
+    volumes:
+      - ./suricata/logs:/var/log/suricata
+    container_name: suricata
     cap_add:
       - NET_ADMIN
       - SYS_NICE
       - NET_RAW
-      - IPC_LOCK
+      - SYS_PTRACE
     security_opt:
       - apparmor:unconfined
-    volumes:
-      - ./suricata/logs:/var/log/suricata
-      - ./suricata/config:/etc/suricata
-    ulimits:
-      memlock: -1
-    # Privileged mode per accesso completo alla rete
-    privileged: true
-    environment:
-      - SURICATA_OPTIONS=--af-packet
+    command:
+      [
+        '/usr/bin/suricata',
+        '-c',
+        '/etc/suricata/suricata.yaml',
+        '--af-packet',
+        '-v',
+      ]
 
-  # ELK Stack
+  # Elasticsearch
   elasticsearch:
-    build: ./elk/elasticsearch
+    build: ./elk-stack/elasticsearch
     environment:
       - discovery.type=single-node
+      - 'ES_JAVA_OPTS=-Xms512m -Xmx512m'
     ports:
       - '9200:9200'
     networks:
-      - security_network
-    volumes:
-      - es_data:/usr/share/elasticsearch/data
+      - elk
+    container_name: elasticsearch
 
+  # Logstash
   logstash:
-    build: ./elk/logstash
-    ports:
-      - '5044:5044'
-    networks:
-      - security_network
+    build: ./elk-stack/logstash
+    volumes:
+      - ./suricata/logs:/suricata-logs
     depends_on:
       - elasticsearch
+    networks:
+      - elk
+    container_name: logstash
 
+  # Kibana
   kibana:
-    build: ./elk/kibana
+    build: ./elk-stack/kibana
     ports:
       - '5601:5601'
-    networks:
-      - security_network
     depends_on:
       - elasticsearch
+    networks:
+      - elk
+    container_name: kibana
 
 networks:
-  security_network:
+  frontend:
     driver: bridge
-
-volumes:
-  es_data:
+  backend:
+    driver: bridge
+  monitoring:
+    driver: bridge
+  elk:
+    driver: bridge

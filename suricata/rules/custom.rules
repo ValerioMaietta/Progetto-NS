@@ -1,0 +1,9 @@
+# Regole per rilevare scansioni di porte
+alert tcp any any -> $HOME_NET any (msg:"SCAN - Nmap TCP Scan"; flow:stateless; flags:S; threshold:type threshold, track by_src, count 5, seconds 60; classtype:attempted-recon; sid:1000001; rev:1;)
+
+# Regole per rilevare SQL injection
+alert tcp any any -> $HOME_NET 5432 (msg:"PGSQL - Possible SQL Injection"; content:"UNION SELECT"; nocase; classtype:web-application-attack; sid:1000002; rev:1;)
+alert tcp any any -> $HOME_NET 5432 (msg:"PGSQL - Possible SQL Injection - OR 1=1"; content:"OR '1'='1"; nocase; classtype:web-application-attack; sid:1000003; rev:1;)
+
+# Regole per rilevare attacchi DoS
+alert tcp any any -> $HOME_NET any (msg:"DOS - TCP SYN Flood"; flow:stateless; flags:S; threshold:type both, track by_src, count 50, seconds 10; classtype:attempted-dos; sid:1000004; rev:1;)
