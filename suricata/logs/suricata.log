@@ -1,25 +1,190 @@
-[1 - Suricata-Main] 2024-12-13 11:22:17 Notice: suricata: This is Suricata version 7.0.8 RELEASE running in SYSTEM mode
-[1 - Suricata-Main] 2024-12-13 11:22:17 Info: cpu: CPUs/cores online: 8
-[1 - Suricata-Main] 2024-12-13 11:22:17 Info: suricata: Setting engine mode to IDS mode by default
-[1 - Suricata-Main] 2024-12-13 11:22:17 Info: ioctl: eth0: MTU 65535
-[1 - Suricata-Main] 2024-12-13 11:22:17 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
-[1 - Suricata-Main] 2024-12-13 11:22:17 Info: logopenfile: fast output device (regular) initialized: fast.log
-[1 - Suricata-Main] 2024-12-13 11:22:17 Info: logopenfile: eve-log output device (regular) initialized: eve.json
-[1 - Suricata-Main] 2024-12-13 11:22:17 Warning: counters: stats are enabled but no loggers are active
-[1 - Suricata-Main] 2024-12-13 11:22:17 Info: detect: No signatures supplied.
-[1 - Suricata-Main] 2024-12-13 11:22:17 Info: runmodes: eth0: creating 8 threads
-[7 - W#01-eth0] 2024-12-13 11:22:17 Error: af-packet: eth0: Frame size bigger than block size
-[7 - W#01-eth0] 2024-12-13 11:22:17 Error: af-packet: eth0: ring parameters are incorrect. Please file a bug report
-[7 - W#01-eth0] 2024-12-13 11:22:17 Error: af-packet: eth0: failed to init socket for interface
-[1 - Suricata-Main] 2024-12-13 11:22:17 Error: threads: thread "W#01-eth0" failed to start: flags 0423
-[1 - Suricata-Main] 2024-12-13 11:36:21 Notice: suricata: This is Suricata version 7.0.8 RELEASE running in SYSTEM mode
-[1 - Suricata-Main] 2024-12-13 11:36:21 Info: cpu: CPUs/cores online: 8
-[1 - Suricata-Main] 2024-12-13 11:36:21 Info: suricata: Setting engine mode to IDS mode by default
-[1 - Suricata-Main] 2024-12-13 11:36:21 Info: ioctl: eth0: MTU 1500
-[1 - Suricata-Main] 2024-12-13 11:36:21 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
-[1 - Suricata-Main] 2024-12-13 11:36:21 Info: logopenfile: fast output device (regular) initialized: fast.log
-[1 - Suricata-Main] 2024-12-13 11:36:21 Info: logopenfile: eve-log output device (regular) initialized: eve.json
-[1 - Suricata-Main] 2024-12-13 11:36:21 Warning: counters: stats are enabled but no loggers are active
-[1 - Suricata-Main] 2024-12-13 11:36:21 Info: detect: No signatures supplied.
-[1 - Suricata-Main] 2024-12-13 11:36:21 Info: runmodes: eth0: creating 1 thread
-[1 - Suricata-Main] 2024-12-13 11:36:21 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2024-12-16 18:10:16 Notice: suricata: This is Suricata version 7.0.8 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2024-12-16 18:10:16 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2024-12-16 18:10:16 Config: device: Adding interface eth0 from config file
+[1 - Suricata-Main] 2024-12-16 18:10:16 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2024-12-16 18:10:16 Config: exception-policy: exception-policy: ignore (defined via 'built-in default' for IDS-mode)
+[1 - Suricata-Main] 2024-12-16 18:10:16 Config: exception-policy: app-layer.error-policy: ignore (defined via 'built-in default' for IDS-mode)
+[1 - Suricata-Main] 2024-12-16 18:10:16 Config: app-layer-htp: 'default' server has 'request-body-minimal-inspect-size' set to 32869 and 'request-body-inspect-window' set to 4280 after randomization.
+[1 - Suricata-Main] 2024-12-16 18:10:16 Config: app-layer-htp: 'default' server has 'response-body-minimal-inspect-size' set to 33599 and 'response-body-inspect-window' set to 4209 after randomization.
+[1 - Suricata-Main] 2024-12-16 18:10:16 Config: app-layer-ssl: no TLS config found, enabling TLS detection on port 443.
+[1 - Suricata-Main] 2024-12-16 18:10:16 Config: smb: read: max record size: 16777216, max queued chunks 64, max queued size 67108864
+[1 - Suricata-Main] 2024-12-16 18:10:16 Config: smb: write: max record size: 16777216, max queued chunks 64, max queued size 67108864
+[1 - Suricata-Main] 2024-12-16 18:10:16 Config: app-layer-enip: Protocol detection and parser disabled for enip protocol.
+[1 - Suricata-Main] 2024-12-16 18:10:16 Config: app-layer-dnp3: Protocol detection and parser disabled for DNP3.
+[1 - Suricata-Main] 2024-12-16 18:10:16 Info: ioctl: eth0: MTU 1500
+[1 - Suricata-Main] 2024-12-16 18:10:16 Config: host: allocated 262144 bytes of memory for the host hash... 4096 buckets of size 64
+[1 - Suricata-Main] 2024-12-16 18:10:16 Config: host: preallocated 1000 hosts of size 144
+[1 - Suricata-Main] 2024-12-16 18:10:16 Config: host: host memory usage: 406144 bytes, maximum: 16777216
+[1 - Suricata-Main] 2024-12-16 18:10:16 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2024-12-16 18:10:16 Config: exception-policy: defrag.memcap-policy: ignore (defined via 'built-in default' for IDS-mode)
+[1 - Suricata-Main] 2024-12-16 18:10:16 Config: defrag-hash: allocated 262144 bytes of memory for the defrag hash... 4096 buckets of size 64
+[1 - Suricata-Main] 2024-12-16 18:10:16 Config: defrag-hash: defrag memory usage: 262144 bytes, maximum: 16777216
+[1 - Suricata-Main] 2024-12-16 18:10:16 Config: exception-policy: flow.memcap-policy: ignore (defined via 'built-in default' for IDS-mode)
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: flow: flow size 304, memcap allows for 0 flows. Per hash row in perfect conditions 0
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp: stream "prealloc-sessions": 2048 (per thread)
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp: stream "memcap": 67108864
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp: stream "midstream" session pickups: disabled
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp: stream "async-oneside": disabled
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp: stream "checksum-validation": enabled
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: exception-policy: stream.memcap-policy: ignore (defined via 'built-in default' for IDS-mode)
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: exception-policy: stream.reassembly.memcap-policy: ignore (defined via 'built-in default' for IDS-mode)
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: exception-policy: stream.midstream-policy: ignore (defined via 'built-in default' for IDS-mode)
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp: stream."inline": disabled
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp: stream "bypass": disabled
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp: stream.reassembly.urgent.policy": inline
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp: stream "max-syn-queued": 10
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp: stream "max-synack-queued": 5
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp: stream.reassembly "memcap": 268435456
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp: stream.reassembly "depth": 0
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp: stream.reassembly "toserver-chunk-size": 2666
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp: stream.reassembly "toclient-chunk-size": 2474
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp: stream.reassembly.raw: enabled
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp: stream.liberal-timestamps: disabled
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp-reassemble: stream.reassembly "segment-prealloc": 2048
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: stream-tcp-reassemble: stream.reassembly "max-regions": 8
+[1 - Suricata-Main] 2024-12-16 18:10:17 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2024-12-16 18:10:17 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: runmodes: enabling 'eve-log' module 'alert'
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: runmodes: enabling 'eve-log' module 'http'
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: runmodes: enabling 'eve-log' module 'dns'
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: runmodes: enabling 'eve-log' module 'tls'
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: runmodes: enabling 'eve-log' module 'files'
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: runmodes: enabling 'eve-log' module 'ssh'
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: runmodes: enabling 'eve-log' module 'flow'
+[1 - Suricata-Main] 2024-12-16 18:10:17 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: suricata: Delayed detect disabled
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: detect: pattern matchers: MPM: ac, SPM: bm
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: detect: grouping: tcp-whitelist (default) 53, 80, 139, 443, 445, 1433, 3306, 3389, 6666, 6667, 8080
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: detect: grouping: udp-whitelist (default) 53, 135, 5060
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: detect: prefilter engines: MPM
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: reputation: IP reputation disabled
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: detect: Loading rule file: /etc/suricata/rules/custom.rules
+[1 - Suricata-Main] 2024-12-16 18:10:17 Info: detect: 1 rule files processed. 8 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2024-12-16 18:10:17 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2024-12-16 18:10:17 Info: detect: 8 signatures processed. 1 are IP-only rules, 3 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: detect: building signature grouping structure, stage 1: preprocessing rules... complete
+[1 - Suricata-Main] 2024-12-16 18:10:17 Perf: detect: TCP toserver: 5 port groups, 3 unique SGH's, 2 copies
+[1 - Suricata-Main] 2024-12-16 18:10:17 Perf: detect: TCP toclient: 1 port groups, 1 unique SGH's, 0 copies
+[1 - Suricata-Main] 2024-12-16 18:10:17 Perf: detect: UDP toserver: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2024-12-16 18:10:17 Perf: detect: UDP toclient: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2024-12-16 18:10:17 Perf: detect: OTHER toserver: 0 proto groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2024-12-16 18:10:17 Perf: detect: OTHER toclient: 0 proto groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2024-12-16 18:10:17 Perf: detect: Unique rule groups: 4
+[1 - Suricata-Main] 2024-12-16 18:10:17 Perf: detect: Builtin MPM "toserver TCP packet": 1
+[1 - Suricata-Main] 2024-12-16 18:10:17 Perf: detect: Builtin MPM "toclient TCP packet": 0
+[1 - Suricata-Main] 2024-12-16 18:10:17 Perf: detect: Builtin MPM "toserver TCP stream": 2
+[1 - Suricata-Main] 2024-12-16 18:10:17 Perf: detect: Builtin MPM "toclient TCP stream": 0
+[1 - Suricata-Main] 2024-12-16 18:10:17 Perf: detect: Builtin MPM "toserver UDP packet": 0
+[1 - Suricata-Main] 2024-12-16 18:10:17 Perf: detect: Builtin MPM "toclient UDP packet": 0
+[1 - Suricata-Main] 2024-12-16 18:10:17 Perf: detect: Builtin MPM "other IP packet": 0
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: af-packet: eth0: enabling locked memory for mmap
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: af-packet: eth0: using flow cluster mode for AF_PACKET
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: af-packet: eth0: using defrag kernel functionality for AF_PACKET
+[1 - Suricata-Main] 2024-12-16 18:10:17 Perf: ioctl: eth0: disabling tso offloading
+[1 - Suricata-Main] 2024-12-16 18:10:17 Perf: ioctl: eth0: disabling gso offloading
+[1 - Suricata-Main] 2024-12-16 18:10:17 Perf: ioctl: eth0: disabling sg offloading
+[1 - Suricata-Main] 2024-12-16 18:10:17 Info: runmodes: eth0: creating 1 thread
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: flow-manager: using 1 flow manager threads
+[1 - Suricata-Main] 2024-12-16 18:10:17 Config: flow-manager: using 1 flow recycler threads
+[7 - W#01-eth0] 2024-12-16 18:10:17 Perf: af-packet: eth0: rx ring: block_size=32768 block_nr=1639 frame_size=1600 frame_nr=32780
+[1 - Suricata-Main] 2024-12-16 18:10:17 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[1 - Suricata-Main] 2024-12-16 18:13:24 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2024-12-16 18:13:25 Info: suricata: time elapsed 188.304s
+[9 - FR#01] 2024-12-16 18:13:25 Perf: flow-manager: 4 flows processed
+[7 - W#01-eth0] 2024-12-16 18:13:25 Perf: af-packet: eth0: (W#01-eth0) kernel: Packets 11, dropped 0
+[1 - Suricata-Main] 2024-12-16 18:13:25 Perf: ippair: ippair memory usage: 422144 bytes, maximum: 16777216
+[1 - Suricata-Main] 2024-12-16 18:13:25 Perf: host: host memory usage: 406144 bytes, maximum: 16777216
+[1 - Suricata-Main] 2024-12-16 18:13:25 Notice: device: eth0: packets: 11, drops: 0 (0.00%), invalid chksum: 0
+[1 - Suricata-Main] 2024-12-16 18:13:25 Perf: ioctl: eth0: restoring tso offloading
+[1 - Suricata-Main] 2024-12-16 18:13:25 Perf: ioctl: eth0: restoring gso offloading
+[1 - Suricata-Main] 2024-12-16 18:13:25 Perf: ioctl: eth0: restoring sg offloading
+[1 - Suricata-Main] 2024-12-16 18:14:57 Notice: suricata: This is Suricata version 7.0.8 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2024-12-16 18:14:57 Info: cpu: CPUs/cores online: 8
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: device: Adding interface eth0 from config file
+[1 - Suricata-Main] 2024-12-16 18:14:57 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: exception-policy: exception-policy: ignore (defined via 'built-in default' for IDS-mode)
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: exception-policy: app-layer.error-policy: ignore (defined via 'built-in default' for IDS-mode)
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: app-layer-htp: 'default' server has 'request-body-minimal-inspect-size' set to 34127 and 'request-body-inspect-window' set to 4065 after randomization.
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: app-layer-htp: 'default' server has 'response-body-minimal-inspect-size' set to 32312 and 'response-body-inspect-window' set to 3895 after randomization.
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: app-layer-ssl: no TLS config found, enabling TLS detection on port 443.
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: smb: read: max record size: 16777216, max queued chunks 64, max queued size 67108864
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: smb: write: max record size: 16777216, max queued chunks 64, max queued size 67108864
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: app-layer-enip: Protocol detection and parser disabled for enip protocol.
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: app-layer-dnp3: Protocol detection and parser disabled for DNP3.
+[1 - Suricata-Main] 2024-12-16 18:14:57 Info: ioctl: eth0: MTU 1500
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: host: allocated 262144 bytes of memory for the host hash... 4096 buckets of size 64
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: host: preallocated 1000 hosts of size 144
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: host: host memory usage: 406144 bytes, maximum: 16777216
+[1 - Suricata-Main] 2024-12-16 18:14:57 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: exception-policy: defrag.memcap-policy: ignore (defined via 'built-in default' for IDS-mode)
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: defrag-hash: allocated 262144 bytes of memory for the defrag hash... 4096 buckets of size 64
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: defrag-hash: defrag memory usage: 262144 bytes, maximum: 16777216
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: exception-policy: flow.memcap-policy: ignore (defined via 'built-in default' for IDS-mode)
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: flow: flow size 304, memcap allows for 0 flows. Per hash row in perfect conditions 0
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp: stream "prealloc-sessions": 2048 (per thread)
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp: stream "memcap": 67108864
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp: stream "midstream" session pickups: disabled
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp: stream "async-oneside": disabled
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp: stream "checksum-validation": enabled
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: exception-policy: stream.memcap-policy: ignore (defined via 'built-in default' for IDS-mode)
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: exception-policy: stream.reassembly.memcap-policy: ignore (defined via 'built-in default' for IDS-mode)
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: exception-policy: stream.midstream-policy: ignore (defined via 'built-in default' for IDS-mode)
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp: stream."inline": disabled
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp: stream "bypass": disabled
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp: stream.reassembly.urgent.policy": inline
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp: stream "max-syn-queued": 10
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp: stream "max-synack-queued": 5
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp: stream.reassembly "memcap": 268435456
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp: stream.reassembly "depth": 0
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp: stream.reassembly "toserver-chunk-size": 2625
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp: stream.reassembly "toclient-chunk-size": 2629
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp: stream.reassembly.raw: enabled
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp: stream.liberal-timestamps: disabled
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp-reassemble: stream.reassembly "segment-prealloc": 2048
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: stream-tcp-reassemble: stream.reassembly "max-regions": 8
+[1 - Suricata-Main] 2024-12-16 18:14:57 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2024-12-16 18:14:57 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: runmodes: enabling 'eve-log' module 'alert'
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: runmodes: enabling 'eve-log' module 'http'
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: runmodes: enabling 'eve-log' module 'dns'
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: runmodes: enabling 'eve-log' module 'tls'
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: runmodes: enabling 'eve-log' module 'files'
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: runmodes: enabling 'eve-log' module 'ssh'
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: runmodes: enabling 'eve-log' module 'flow'
+[1 - Suricata-Main] 2024-12-16 18:14:57 Warning: counters: stats are enabled but no loggers are active
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: suricata: Delayed detect disabled
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: detect: pattern matchers: MPM: ac, SPM: bm
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: detect: grouping: tcp-whitelist (default) 53, 80, 139, 443, 445, 1433, 3306, 3389, 6666, 6667, 8080
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: detect: grouping: udp-whitelist (default) 53, 135, 5060
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: detect: prefilter engines: MPM
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: reputation: IP reputation disabled
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: detect: Loading rule file: /etc/suricata/rules/custom.rules
+[1 - Suricata-Main] 2024-12-16 18:14:57 Info: detect: 1 rule files processed. 8 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2024-12-16 18:14:57 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2024-12-16 18:14:57 Info: detect: 8 signatures processed. 1 are IP-only rules, 3 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: detect: building signature grouping structure, stage 1: preprocessing rules... complete
+[1 - Suricata-Main] 2024-12-16 18:14:57 Perf: detect: TCP toserver: 5 port groups, 3 unique SGH's, 2 copies
+[1 - Suricata-Main] 2024-12-16 18:14:57 Perf: detect: TCP toclient: 1 port groups, 1 unique SGH's, 0 copies
+[1 - Suricata-Main] 2024-12-16 18:14:57 Perf: detect: UDP toserver: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2024-12-16 18:14:57 Perf: detect: UDP toclient: 0 port groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2024-12-16 18:14:57 Perf: detect: OTHER toserver: 0 proto groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2024-12-16 18:14:57 Perf: detect: OTHER toclient: 0 proto groups, 0 unique SGH's, 0 copies
+[1 - Suricata-Main] 2024-12-16 18:14:57 Perf: detect: Unique rule groups: 4
+[1 - Suricata-Main] 2024-12-16 18:14:57 Perf: detect: Builtin MPM "toserver TCP packet": 1
+[1 - Suricata-Main] 2024-12-16 18:14:57 Perf: detect: Builtin MPM "toclient TCP packet": 0
+[1 - Suricata-Main] 2024-12-16 18:14:57 Perf: detect: Builtin MPM "toserver TCP stream": 2
+[1 - Suricata-Main] 2024-12-16 18:14:57 Perf: detect: Builtin MPM "toclient TCP stream": 0
+[1 - Suricata-Main] 2024-12-16 18:14:57 Perf: detect: Builtin MPM "toserver UDP packet": 0
+[1 - Suricata-Main] 2024-12-16 18:14:57 Perf: detect: Builtin MPM "toclient UDP packet": 0
+[1 - Suricata-Main] 2024-12-16 18:14:57 Perf: detect: Builtin MPM "other IP packet": 0
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: af-packet: eth0: enabling locked memory for mmap
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: af-packet: eth0: using flow cluster mode for AF_PACKET
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: af-packet: eth0: using defrag kernel functionality for AF_PACKET
+[1 - Suricata-Main] 2024-12-16 18:14:57 Perf: ioctl: eth0: disabling tso offloading
+[1 - Suricata-Main] 2024-12-16 18:14:57 Perf: ioctl: eth0: disabling gso offloading
+[1 - Suricata-Main] 2024-12-16 18:14:57 Perf: ioctl: eth0: disabling sg offloading
+[1 - Suricata-Main] 2024-12-16 18:14:57 Info: runmodes: eth0: creating 1 thread
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: flow-manager: using 1 flow manager threads
+[1 - Suricata-Main] 2024-12-16 18:14:57 Config: flow-manager: using 1 flow recycler threads
+[7 - W#01-eth0] 2024-12-16 18:14:57 Perf: af-packet: eth0: rx ring: block_size=32768 block_nr=1639 frame_size=1600 frame_nr=32780
+[1 - Suricata-Main] 2024-12-16 18:14:57 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.

@@ -4,9 +4,8 @@ import requests
 import nmap
 import time
 import random
-from scapy.all import *
-import psycopg2
 from datetime import datetime
+import psycopg2
 
 def generate_normal_traffic(web_server_url):
     """Genera traffico web normale"""
@@ -16,63 +15,104 @@ def generate_normal_traffic(web_server_url):
     except Exception as e:
         print(f"Error generating normal traffic: {e}")
 
-def scan_ports(target):
-    """Esegue una scansione delle porte usando nmap"""
-    nm = nmap.PortScanner()
-    nm.scan(target, arguments='-p 80,443,5432 -sS')
-    print(f"Port scan completed on {target}")
-
-def sql_injection_simulation(db_host):
-    """Simula tentativi di SQL injection"""
+def generate_sql_injection_traffic(web_server_url):
+    """Genera tentativi di SQL injection via HTTP"""
     payloads = [
-        "' OR '1'='1",
-        "'; DROP TABLE users; --",
-        "' UNION SELECT * FROM users; --"
+        "?id=1 UNION SELECT username,password FROM users",
+        "?id=1 OR 1=1",
+        "?username=admin' OR '1'='1",
+        "?input='; DROP TABLE users;--"
     ]
     
     for payload in payloads:
         try:
-            conn = psycopg2.connect(
-                dbname="testdb",
-                user="testuser",
-                password="testpass",
-                host=db_host
-            )
-            cur = conn.cursor()
-            
-            # Simula una query malevola
-            query = f"SELECT * FROM users WHERE username = '{payload}'"
-            print(f"Attempting SQL injection with payload: {payload}")
-            
-            # Non eseguiamo realmente la query per sicurezza
-            # cur.execute(query)
-            
+            url = f"{web_server_url}{payload}"
+            response = requests.get(url)
+            print(f"SQL injection attempt: {url}")
         except Exception as e:
-            print(f"SQL injection simulation error: {e}")
-        finally:
-            if 'conn' in locals():
-                conn.close()
+            print(f"Error in SQL injection attempt: {e}")
+
+def scan_ports(target):
+    """Esegue una scansione delle porte usando nmap"""
+    nm = nmap.PortScanner()
+    try:
+        # Scansione SYN
+        nm.scan(target, arguments='-p 80,443,5432 -sS')
+        print(f"SYN scan completed on {target}")
+        
+        # Scansione aggressiva
+        nm.scan(target, arguments='-p 80,443,5432 -A')
+        print(f"Aggressive scan completed on {target}")
+    except Exception as e:
+        print(f"Error in port scanning: {e}")
+
+def generate_dos_traffic(web_server_url):
+    """Simula un attacco DoS generando molte richieste"""
+    for _ in range(100):
+        try:
+            requests.get(web_server_url)
+        except:
+            pass
+    print("DoS traffic generated")
+
+def test_postgres_connection(db_host):
+    """Testa la connessione PostgreSQL con tentativi di SQL injection"""
+    sql_injection_attempts = [
+        "SELECT * FROM users WHERE username = '' UNION SELECT * FROM users--",
+        "SELECT * FROM users WHERE username = 'admin' OR '1'='1'",
+        "SELECT * FROM users; DROP TABLE users;--"
+    ]
+    
+    try:
+        conn = psycopg2.connect(
+            dbname="testdb",
+            user="testuser",
+            password="testpass",
+            host=db_host
+        )
+        cur = conn.cursor()
+        
+        for attempt in sql_injection_attempts:
+            try:
+                print(f"Attempting SQL injection: {attempt}")
+                # Non eseguiamo realmente la query per sicurezza
+                # cur.execute(attempt)
+            except Exception as e:
+                print(f"SQL injection attempt failed: {e}")
+                
+    except Exception as e:
+        print(f"Database connection error: {e}")
+    finally:
+        if 'conn' in locals():
+            conn.close()
 
 def main():
     WEB_SERVER = "http://web-server"
     DB_HOST = "database"
     
     while True:
-        # Genera traffico normale
+        # Traffico normale
         generate_normal_traffic(WEB_SERVER)
-        time.sleep(random.uniform(1, 5))
+        time.sleep(2)
         
-        # Occasionalmente esegue una scansione delle porte
-        if random.random() < 0.2:
-            scan_ports(WEB_SERVER)
+        # SQL Injection via HTTP
+        generate_sql_injection_traffic(WEB_SERVER)
+        time.sleep(2)
         
-        # Occasionalmente simula tentativi di SQL injection
-        if random.random() < 0.1:
-            sql_injection_simulation(DB_HOST)
+        # Port scanning
+        scan_ports("web-server")
+        time.sleep(2)
         
+        # DoS traffic
+        generate_dos_traffic(WEB_SERVER)
+        time.sleep(2)
+        
+        # PostgreSQL tests
+        test_postgres_connection(DB_HOST)
         time.sleep(5)
 
 if __name__ == "__main__":
     # Attendi che i servizi siano pronti
     time.sleep(30)
+    print("Starting traffic generation...")
     main()

@@ -1,9 +1,19 @@
-# Regole per rilevare scansioni di porte
-alert tcp any any -> $HOME_NET any (msg:"SCAN - Nmap TCP Scan"; flow:stateless; flags:S; threshold:type threshold, track by_src, count 5, seconds 60; classtype:attempted-recon; sid:1000001; rev:1;)
+# Regole base per il traffico HTTP
+alert tcp any any -> any 80 (msg:"HTTP Traffic Detected"; flow:established,to_server; sid:1000001; rev:1;)
+alert tcp any any -> any 80 (msg:"HTTP GET Detected"; flow:established,to_server; content:"GET"; depth:4; sid:1000002; rev:1;)
 
-# Regole per rilevare SQL injection
-alert tcp any any -> $HOME_NET 5432 (msg:"PGSQL - Possible SQL Injection"; content:"UNION SELECT"; nocase; classtype:web-application-attack; sid:1000002; rev:1;)
-alert tcp any any -> $HOME_NET 5432 (msg:"PGSQL - Possible SQL Injection - OR 1=1"; content:"OR '1'='1"; nocase; classtype:web-application-attack; sid:1000003; rev:1;)
+# Regole SQL Injection più semplici
+alert tcp any any -> any any (msg:"SQL Injection Attempt - UNION"; flow:established,to_server; content:"UNION"; nocase; sid:1000003; rev:1;)
+alert tcp any any -> any any (msg:"SQL Injection Attempt - OR 1=1"; flow:established,to_server; content:"OR 1=1"; nocase; sid:1000004; rev:1;)
 
-# Regole per rilevare attacchi DoS
-alert tcp any any -> $HOME_NET any (msg:"DOS - TCP SYN Flood"; flow:stateless; flags:S; threshold:type both, track by_src, count 50, seconds 10; classtype:attempted-dos; sid:1000004; rev:1;)
+# Regole per scansioni
+alert tcp any any -> any any (msg:"Port Scan Detected"; flags:S; threshold:type threshold, track by_src, count 3, seconds 1; sid:1000005; rev:1;)
+
+# Regole per ICMP
+alert icmp any any -> any any (msg:"ICMP Ping Detected"; sid:1000006; rev:1;)
+
+# Regole per traffico database
+alert tcp any any -> any 5432 (msg:"PostgreSQL Traffic"; flow:established,to_server; sid:1000007; rev:1;)
+
+# Regola DoS semplificata
+alert tcp any any -> any any (msg:"Possible DoS"; flags:S; flow:stateless; threshold:type both, track by_src, count 30, seconds 3; sid:1000008; rev:1;)

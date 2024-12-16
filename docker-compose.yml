@@ -46,22 +46,25 @@ services:
       - backend
       - monitoring
     volumes:
-      - ./suricata/logs:/var/log/suricata
+      - ./suricata/logs:/var/log/suricata:rw
     container_name: suricata
     cap_add:
       - NET_ADMIN
       - SYS_NICE
       - NET_RAW
       - SYS_PTRACE
+      - IPC_LOCK
     security_opt:
       - apparmor:unconfined
     command:
       [
-        '/usr/bin/suricata',
+        'suricata',
         '-c',
         '/etc/suricata/suricata.yaml',
         '--af-packet',
         '-v',
+        '--set',
+        'capture.disable-offloading=true',
       ]
 
   # Elasticsearch

@@ -7,6 +7,20 @@ vars:
 
 default-log-dir: /var/log/suricata
 
+rule-files:
+  - /etc/suricata/rules/custom.rules
+
+af-packet:
+  - interface: eth0
+    threads: 1
+    cluster-id: 99
+    cluster-type: cluster_flow
+    defrag: yes
+    mmap-locked: yes
+    use-mmap: yes
+    ring-size: 32768
+    block-size: 32768
+
 outputs:
   - fast:
       enabled: yes
@@ -17,7 +31,12 @@ outputs:
       filetype: regular
       filename: eve.json
       types:
-        - alert
+        - alert:
+            payload: yes
+            payload-printable: yes
+            packet: yes
+            http-body: yes
+            http-body-printable: yes
         - http
         - dns
         - tls
@@ -25,59 +44,38 @@ outputs:
         - ssh
         - flow
 
-af-packet:
-  - interface: eth0
-    threads: 1
-    cluster-id: 99
-    cluster-type: cluster_flow
-    defrag: yes
-    mmap-locked: yes
-    tpacket-v3: yes
-    use-mmap: yes
-    buffer-size: 32768
-    block-size: 32768
-    block-timeout: 10
-    ring-size: 2048
-
 app-layer:
   protocols:
-    tls:
-      enabled: yes
     http:
       enabled: yes
-    sql:
+
+    tls:
+      enabled: yes
+
+    ssh:
+      enabled: yes
+
+    smtp:
+      enabled: yes
+
+    dns:
       enabled: yes
 
 logging:
-  default-log-level: info
+  default-log-level: debug
   outputs:
     - console:
         enabled: yes
+        level: debug
     - file:
         enabled: yes
+        level: debug
         filename: suricata.log
-        level: info
 
-# Disabilita alcuni controlli per debug
-engine-analysis:
-  rules-fast-pattern: yes
-
-threading:
-  set-cpu-affinity: no
-  cpu-affinity:
-    - management-cpu-set:
-        cpu: [0]
-    - receive-cpu-set:
-        cpu: [0]
-    - decode-cpu-set:
-        cpu: [0]
-    - stream-cpu-set:
-        cpu: [0]
-    - detect-cpu-set:
-        cpu: [0]
-    - verdict-cpu-set:
-        cpu: [0]
-    - reject-cpu-set:
-        cpu: [0]
-    - output-cpu-set:
-        cpu: [0]
+detect-engine:
+  - profile: medium
+  - inspection-recursion-limit: 3000
+  - prefilter:
+      enabled: yes
+  - sgh-mpm-context: auto
+  - detection-filter-reload: auto
