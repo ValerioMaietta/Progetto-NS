@@ -2,80 +2,38 @@
 ---
 vars:
   address-groups:
-    HOME_NET: '[192.168.0.0/16,10.0.0.0/8,172.16.0.0/12]'
-    EXTERNAL_NET: '!$HOME_NET'
+    HOME_NET: '[172.18.0.0/16]'
+    EXTERNAL_NET: 'any'
 
-default-log-dir: /var/log/suricata
-
+default-rule-path: /etc/suricata/rules
 rule-files:
-  - /etc/suricata/rules/custom.rules
-
-af-packet:
-  - interface: eth0
-    threads: 1
-    cluster-id: 99
-    cluster-type: cluster_flow
-    defrag: yes
-    mmap-locked: yes
-    use-mmap: yes
-    ring-size: 32768
-    block-size: 32768
+  - custom.rules
 
 outputs:
   - fast:
       enabled: yes
-      filename: fast.log
+      filename: /var/log/suricata/fast.log
       append: yes
   - eve-log:
       enabled: yes
       filetype: regular
-      filename: eve.json
+      filename: /var/log/suricata/eve.json
       types:
-        - alert:
-            payload: yes
-            payload-printable: yes
-            packet: yes
-            http-body: yes
-            http-body-printable: yes
+        - alert
         - http
-        - dns
-        - tls
-        - files
-        - ssh
-        - flow
 
 app-layer:
   protocols:
     http:
       enabled: yes
-
-    tls:
-      enabled: yes
-
-    ssh:
-      enabled: yes
-
-    smtp:
-      enabled: yes
-
-    dns:
-      enabled: yes
+      libhtp:
+        default-config:
+          personality: IDS
 
 logging:
   default-log-level: debug
   outputs:
-    - console:
-        enabled: yes
-        level: debug
     - file:
         enabled: yes
         level: debug
-        filename: suricata.log
-
-detect-engine:
-  - profile: medium
-  - inspection-recursion-limit: 3000
-  - prefilter:
-      enabled: yes
-  - sgh-mpm-context: auto
-  - detection-filter-reload: auto
+        filename: /var/log/suricata/suricata.log

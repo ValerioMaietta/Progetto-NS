@@ -1,112 +1,53 @@
-version: '3.8'
+version: '3'
 
 services:
-  # Web Server - Nginx
-  web-server:
-    build: ./web-server
-    ports:
-      - '80:80'
+  web:
+    container_name: web
+    build: ./web
     networks:
-      - frontend
-      - monitoring
-    depends_on:
-      - database
-    container_name: web-server
+      security_network:
+        ipv4_address: 172.18.0.2
 
-  # Database - PostgreSQL
-  database:
+  db:
+    container_name: db
     build: ./database
     environment:
       POSTGRES_DB: testdb
       POSTGRES_USER: testuser
       POSTGRES_PASSWORD: testpass
-    ports:
-      - '5432:5432'
     networks:
-      - backend
-      - monitoring
-    container_name: database
+      security_network:
+        ipv4_address: 172.18.0.3
 
-  # Client machine for testing
-  client:
-    build: ./client
-    networks:
-      - frontend
-      - backend
-    depends_on:
-      - web-server
-      - database
-    container_name: client
-
-  # Suricata IDS
   suricata:
-    build: ./suricata
-    networks:
-      - frontend
-      - backend
-      - monitoring
-    volumes:
-      - ./suricata/logs:/var/log/suricata:rw
     container_name: suricata
+    build: ./suricata
+    volumes:
+      - ./suricata/rules:/etc/suricata/rules:ro
+      - ./logs:/var/log/suricata:rw
+    network_mode: 'container:web'
+    depends_on:
+      - web
+    privileged: true
     cap_add:
       - NET_ADMIN
-      - SYS_NICE
       - NET_RAW
-      - SYS_PTRACE
-      - IPC_LOCK
-    security_opt:
-      - apparmor:unconfined
-    command:
-      [
-        'suricata',
-        '-c',
-        '/etc/suricata/suricata.yaml',
-        '--af-packet',
-        '-v',
-        '--set',
-        'capture.disable-offloading=true',
-      ]
 
-  # Elasticsearch
-  elasticsearch:
-    build: ./elk-stack/elasticsearch
-    environment:
-      - discovery.type=single-node
-      - 'ES_JAVA_OPTS=-Xms512m -Xmx512m'
-    ports:
-      - '9200:9200'
-    networks:
-      - elk
-    container_name: elasticsearch
-
-  # Logstash
-  logstash:
-    build: ./elk-stack/logstash
+  client:
+    container_name: client
+    build: ./client
     volumes:
-      - ./suricata/logs:/suricata-logs
-    depends_on:
-      - elasticsearch
+      - ./scripts:/scripts
     networks:
-      - elk
-    container_name: logstash
-
-  # Kibana
-  kibana:
-    build: ./elk-stack/kibana
-    ports:
-      - '5601:5601'
+      security_network:
+        ipv4_address: 172.18.0.4
     depends_on:
-      - elasticsearch
-    networks:
-      - elk
-    container_name: kibana
+      - web
+      - db
 
 networks:
-  frontend:
+  security_network:
     driver: bridge
-  backend:
-    driver: bridge
-  monitoring:
-    driver: bridge
-  elk:
-    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.0.0/16

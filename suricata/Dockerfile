@@ -1,27 +1,28 @@
-# Usa Ubuntu come base
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
-# Evita interazioni durante l'installazione
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Installa Suricata e dipendenze
-RUN apt-get update && apt-get install -y \
-    software-properties-common \
-    && add-apt-repository ppa:oisf/suricata-stable \
-    && apt-get update \
-    && apt-get install -y suricata \
+RUN apt-get update && \
+    apt-get install -y \
+    suricata \
+    && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Crea directory per i log e le regole
+# Crea le directory necessarie
 RUN mkdir -p /var/log/suricata /etc/suricata/rules
+RUN touch /var/log/suricata/fast.log \
+    /var/log/suricata/eve.json \
+    /var/log/suricata/suricata.log
 
-# Copia i file di configurazione
-COPY suricata.yaml /etc/suricata/
-COPY rules/custom.rules /etc/suricata/rules/
+# Modifica i permessi
+RUN chmod 666 /var/log/suricata/fast.log \
+    /var/log/suricata/eve.json \
+    /var/log/suricata/suricata.log \
+    && chmod -R 755 /var/log/suricata
 
-# Imposta i permessi
-RUN chmod -R 755 /var/log/suricata && \
-    chmod -R 755 /etc/suricata
+# Copia la configurazione
+COPY suricata.yaml /etc/suricata/suricata.yaml
 
-# Avvia Suricata
-CMD ["suricata", "-c", "/etc/suricata/suricata.yaml", "--af-packet", "-v"]
+# Comando di avvio
+CMD ["suricata", "-c", "/etc/suricata/suricata.yaml", "-i", "eth0", "--init-errors-fatal"]

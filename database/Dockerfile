@@ -1,8 +1,7 @@
-# Usa l'immagine ufficiale di PostgreSQL
-FROM postgres:13-alpine
+FROM postgres:latest
 
 # Copia lo script di inizializzazione
 COPY init.sql /docker-entrypoint-initdb.d/
 
-# Esponi la porta standard di PostgreSQL
+# Espone la porta standard di PostgreSQL
 EXPOSE 5432

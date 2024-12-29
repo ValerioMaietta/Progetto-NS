@@ -1,35 +1,19 @@
-# Usa Ubuntu come base
-FROM ubuntu:20.04
+FROM python:3.9-slim
 
-# Evita interazioni durante l'installazione
-ENV DEBIAN_FRONTEND=noninteractive
+# Installa nmap e altre dipendenze di sistema necessarie
+RUN apt-get update && \
+    apt-get install -y nmap && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
-# Installa le dipendenze necessarie
-RUN apt-get update && apt-get install -y \
-    python3 \
-    python3-pip \
-    nmap \
-    curl \
-    postgresql \
-    postgresql-contrib \
-    libpq-dev \
-    python3-dev \
-    gcc \
-    tcpdump \
-    && rm -rf /var/lib/apt/lists/*
+# Installa le dipendenze Python necessarie
+RUN pip install requests psycopg2-binary
 
 # Crea la directory per gli script
-WORKDIR /app
+RUN mkdir /scripts
 
-# Copia i file necessari
-COPY scripts/requirements.txt .
-COPY scripts/traffic_generator.py .
+# Imposta la directory di lavoro
+WORKDIR /scripts
 
-# Installa le dipendenze Python
-RUN pip3 install --no-cache-dir -r requirements.txt
-
-# Rendi eseguibile lo script
-RUN chmod +x /app/traffic_generator.py
-
-# Avvia lo script Python all'avvio del container
-CMD ["python3", "/app/traffic_generator.py"]
+# Mantieni il container in esecuzione
+CMD ["tail", "-f", "/dev/null"]
