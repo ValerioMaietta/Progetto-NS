@@ -1,0 +1,30 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /var/log/suricata/eve.json
+    json.keys_under_root: true
+    json.add_error_key: true
+    fields:
+      type: suricata
+    fields_under_root: true
+
+output.elasticsearch:
+  hosts: ['elasticsearch:9200']
+  index: 'suricata-%{+yyyy.MM.dd}'
+
+setup.kibana:
+  host: 'kibana:5601'
+
+setup.template.name: 'suricata'
+setup.template.pattern: 'suricata-*'
+setup.template.enabled: true
+setup.template.overwrite: true
+
+setup.ilm.enabled: false
+logging.level: info
+
+processors:
+  - add_host_metadata: ~
+  - add_cloud_metadata: ~
+  - add_docker_metadata: ~
