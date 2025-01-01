@@ -6,14 +6,11 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Installa le dipendenze Python necessarie
-RUN pip install requests psycopg2-binary
-
 # Crea la directory per gli script
-RUN mkdir /scripts
-
-# Imposta la directory di lavoro
 WORKDIR /scripts
+
+# Installa le librerie Python necessarie
+RUN pip install requests urllib3
 
 # Mantieni il container in esecuzione
 CMD ["tail", "-f", "/dev/null"]

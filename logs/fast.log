@@ -65,3 +65,363 @@
 01/01/2025-15:39:17.912866  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:54730 -> 172.18.0.2:80
 01/01/2025-15:39:18.924392  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:54744 -> 172.18.0.2:80
 01/01/2025-15:39:19.929157  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:54758 -> 172.18.0.2:80
+01/01/2025-16:19:33.701539  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47204 -> 172.18.0.2:80
+01/01/2025-16:19:33.702717  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47204 -> 172.18.0.2:80
+01/01/2025-16:19:34.707753  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47214 -> 172.18.0.2:80
+01/01/2025-16:19:35.717661  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47216 -> 172.18.0.2:80
+01/01/2025-16:19:36.721757  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47220 -> 172.18.0.2:80
+01/01/2025-16:19:37.725977  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47232 -> 172.18.0.2:80
+01/01/2025-16:19:38.731962  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37150 -> 172.18.0.2:80
+01/01/2025-16:19:38.732413  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37150 -> 172.18.0.2:80
+01/01/2025-16:19:39.737248  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37158 -> 172.18.0.2:80
+01/01/2025-16:19:40.742831  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37172 -> 172.18.0.2:80
+01/01/2025-16:19:41.747138  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37184 -> 172.18.0.2:80
+01/01/2025-16:24:18.327339  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:58202 -> 172.18.0.2:80
+01/01/2025-16:24:18.329268  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:58202 -> 172.18.0.2:80
+01/01/2025-16:24:19.341515  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:33662 -> 172.18.0.2:80
+01/01/2025-16:24:20.345027  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:33676 -> 172.18.0.2:80
+01/01/2025-16:24:21.354311  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:33678 -> 172.18.0.2:80
+01/01/2025-16:24:22.361411  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:33680 -> 172.18.0.2:80
+01/01/2025-16:24:23.370948  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:33684 -> 172.18.0.2:80
+01/01/2025-16:24:23.371484  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:33684 -> 172.18.0.2:80
+01/01/2025-16:24:24.378017  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:33688 -> 172.18.0.2:80
+01/01/2025-16:24:25.387312  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:33698 -> 172.18.0.2:80
+01/01/2025-16:24:26.392499  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:33708 -> 172.18.0.2:80
+01/01/2025-16:25:42.358748  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56820 -> 172.18.0.2:80
+01/01/2025-16:25:42.360013  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56820 -> 172.18.0.2:80
+01/01/2025-16:25:43.366590  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56824 -> 172.18.0.2:80
+01/01/2025-16:25:44.371737  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56836 -> 172.18.0.2:80
+01/01/2025-16:25:45.376929  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56852 -> 172.18.0.2:80
+01/01/2025-16:25:46.383313  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56854 -> 172.18.0.2:80
+01/01/2025-16:25:47.387750  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56856 -> 172.18.0.2:80
+01/01/2025-16:25:47.388182  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56856 -> 172.18.0.2:80
+01/01/2025-16:25:48.397257  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56870 -> 172.18.0.2:80
+01/01/2025-16:25:49.402158  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:60446 -> 172.18.0.2:80
+01/01/2025-16:25:50.406087  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:60452 -> 172.18.0.2:80
+01/01/2025-16:25:58.805088  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:60061 -> 172.18.0.2:8080
+01/01/2025-16:26:07.141145  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:41070 -> 172.18.0.2:80
+01/01/2025-16:26:08.147887  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:41074 -> 172.18.0.2:80
+01/01/2025-16:26:09.150364  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:50170 -> 172.18.0.2:80
+01/01/2025-16:26:09.150577  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:50170 -> 172.18.0.2:80
+01/01/2025-16:26:10.154406  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:50182 -> 172.18.0.2:80
+01/01/2025-16:26:11.161947  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:50186 -> 172.18.0.2:80
+01/01/2025-16:26:12.170736  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:50188 -> 172.18.0.2:80
+01/01/2025-16:26:13.174900  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:50194 -> 172.18.0.2:80
+01/01/2025-16:26:14.180089  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:50196 -> 172.18.0.2:80
+01/01/2025-16:26:14.180310  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:50196 -> 172.18.0.2:80
+01/01/2025-16:26:15.187986  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:50206 -> 172.18.0.2:80
+01/01/2025-16:26:22.291401  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:34802 -> 172.18.0.2:22
+01/01/2025-16:26:28.348066  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:39570 -> 172.18.0.2:80
+01/01/2025-16:26:29.358275  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:46988 -> 172.18.0.2:80
+01/01/2025-16:26:30.360771  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47004 -> 172.18.0.2:80
+01/01/2025-16:26:31.363520  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47008 -> 172.18.0.2:80
+01/01/2025-16:26:32.368835  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47024 -> 172.18.0.2:80
+01/01/2025-16:26:32.369328  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47024 -> 172.18.0.2:80
+01/01/2025-16:26:33.379925  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47040 -> 172.18.0.2:80
+01/01/2025-16:26:34.385788  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47056 -> 172.18.0.2:80
+01/01/2025-16:26:35.392588  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47070 -> 172.18.0.2:80
+01/01/2025-16:26:36.399031  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47086 -> 172.18.0.2:80
+01/01/2025-16:32:49.328885  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:46956 -> 172.18.0.2:80
+01/01/2025-16:33:24.672605  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37266 -> 172.18.0.2:80
+01/01/2025-16:49:51.346096  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:49186 -> 172.18.0.2:80
+01/01/2025-16:49:51.351339  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:49186 -> 172.18.0.2:80
+01/01/2025-16:49:52.359771  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:49190 -> 172.18.0.2:80
+01/01/2025-16:49:53.366713  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:49198 -> 172.18.0.2:80
+01/01/2025-16:49:54.373310  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:49204 -> 172.18.0.2:80
+01/01/2025-16:49:55.379652  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:49210 -> 172.18.0.2:80
+01/01/2025-16:49:56.386414  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:49218 -> 172.18.0.2:80
+01/01/2025-16:49:56.386808  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:49218 -> 172.18.0.2:80
+01/01/2025-16:49:57.396691  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:49232 -> 172.18.0.2:80
+01/01/2025-16:49:58.403602  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:49236 -> 172.18.0.2:80
+01/01/2025-16:49:59.409491  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:36018 -> 172.18.0.2:80
+01/01/2025-16:50:03.425567  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:36042 -> 172.18.0.2:80
+01/01/2025-16:50:03.425901  [**] [1:1000005:1] SQL Injection Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:36042 -> 172.18.0.2:80
+01/01/2025-16:50:05.435768  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:36074 -> 172.18.0.2:80
+01/01/2025-16:50:09.455656  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:41586 -> 172.18.0.2:80
+01/01/2025-16:50:09.460002  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:41650 -> 172.18.0.2:80
+01/01/2025-16:50:09.465518  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:41710 -> 172.18.0.2:80
+01/01/2025-16:50:09.470854  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:41740 -> 172.18.0.2:80
+01/01/2025-16:50:09.474859  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:41788 -> 172.18.0.2:80
+01/01/2025-16:50:09.480170  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:41814 -> 172.18.0.2:80
+01/01/2025-16:50:09.484470  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:41864 -> 172.18.0.2:80
+01/01/2025-16:50:09.487148  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:41912 -> 172.18.0.2:80
+01/01/2025-16:50:09.491043  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:41968 -> 172.18.0.2:80
+01/01/2025-16:50:09.495546  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:42026 -> 172.18.0.2:80
+01/01/2025-16:50:09.500528  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:42070 -> 172.18.0.2:80
+01/01/2025-16:50:09.503369  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:42108 -> 172.18.0.2:80
+01/01/2025-16:50:09.506416  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:42150 -> 172.18.0.2:80
+01/01/2025-16:50:09.511429  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:42204 -> 172.18.0.2:80
+01/01/2025-16:50:09.514229  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:42246 -> 172.18.0.2:80
+01/01/2025-16:50:09.518329  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:42296 -> 172.18.0.2:80
+01/01/2025-16:50:09.521600  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:42344 -> 172.18.0.2:80
+01/01/2025-16:50:09.525327  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:42378 -> 172.18.0.2:80
+01/01/2025-16:50:09.530135  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:42418 -> 172.18.0.2:80
+01/01/2025-16:50:09.531933  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:42458 -> 172.18.0.2:80
+01/01/2025-16:50:09.534508  [**] [1:1000006:1] Potential DDoS Attack Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:42494 -> 172.18.0.2:80
+01/01/2025-16:52:17.579393  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59582 -> 172.18.0.2:80
+01/01/2025-16:52:17.581167  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59582 -> 172.18.0.2:80
+01/01/2025-16:52:18.586709  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:39082 -> 172.18.0.2:80
+01/01/2025-16:52:19.597156  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:39086 -> 172.18.0.2:80
+01/01/2025-16:52:20.601533  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:39090 -> 172.18.0.2:80
+01/01/2025-16:52:21.606888  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:39096 -> 172.18.0.2:80
+01/01/2025-16:52:22.613196  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:39112 -> 172.18.0.2:80
+01/01/2025-16:52:22.613487  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:39112 -> 172.18.0.2:80
+01/01/2025-16:52:23.621951  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:39124 -> 172.18.0.2:80
+01/01/2025-16:52:24.628794  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:39140 -> 172.18.0.2:80
+01/01/2025-16:52:25.634377  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:39144 -> 172.18.0.2:80
+01/01/2025-16:52:29.653465  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:58850 -> 172.18.0.2:80
+01/01/2025-16:52:29.653926  [**] [1:1000005:1] SQL Injection Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:58850 -> 172.18.0.2:80
+01/01/2025-16:52:31.667359  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:58876 -> 172.18.0.2:80
+01/01/2025-16:52:35.685760  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:58900 -> 172.18.0.2:80
+01/01/2025-16:52:35.702114  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:58936 -> 172.18.0.2:80
+01/01/2025-16:52:35.706395  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:58992 -> 172.18.0.2:80
+01/01/2025-16:52:35.710138  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59046 -> 172.18.0.2:80
+01/01/2025-16:52:35.713075  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59086 -> 172.18.0.2:80
+01/01/2025-16:52:35.717137  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59130 -> 172.18.0.2:80
+01/01/2025-16:52:35.720219  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59172 -> 172.18.0.2:80
+01/01/2025-16:52:35.723265  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59204 -> 172.18.0.2:80
+01/01/2025-16:52:35.727187  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59250 -> 172.18.0.2:80
+01/01/2025-16:52:35.729403  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59288 -> 172.18.0.2:80
+01/01/2025-16:52:35.733445  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59316 -> 172.18.0.2:80
+01/01/2025-16:52:35.736778  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59362 -> 172.18.0.2:80
+01/01/2025-16:52:35.739667  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59396 -> 172.18.0.2:80
+01/01/2025-16:52:35.742615  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59446 -> 172.18.0.2:80
+01/01/2025-16:52:35.746386  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59506 -> 172.18.0.2:80
+01/01/2025-16:52:35.749762  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59560 -> 172.18.0.2:80
+01/01/2025-16:52:35.753889  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59604 -> 172.18.0.2:80
+01/01/2025-16:52:35.755920  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59646 -> 172.18.0.2:80
+01/01/2025-16:52:35.759981  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59698 -> 172.18.0.2:80
+01/01/2025-16:52:35.763753  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59750 -> 172.18.0.2:80
+01/01/2025-16:52:35.765061  [**] [1:1000006:1] Potential DDoS Attack Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59770 -> 172.18.0.2:80
+01/01/2025-17:01:23.473741  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37226 -> 172.18.0.2:80
+01/01/2025-17:01:23.474330  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37226 -> 172.18.0.2:80
+01/01/2025-17:01:24.481888  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37228 -> 172.18.0.2:80
+01/01/2025-17:01:25.485166  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37242 -> 172.18.0.2:80
+01/01/2025-17:01:26.489552  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37256 -> 172.18.0.2:80
+01/01/2025-17:01:27.495966  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37258 -> 172.18.0.2:80
+01/01/2025-17:01:28.498079  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45312 -> 172.18.0.2:80
+01/01/2025-17:01:28.498280  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45312 -> 172.18.0.2:80
+01/01/2025-17:01:29.501087  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45326 -> 172.18.0.2:80
+01/01/2025-17:01:30.505915  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45328 -> 172.18.0.2:80
+01/01/2025-17:01:31.508662  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45342 -> 172.18.0.2:80
+01/01/2025-17:01:34.515127  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45348 -> 172.18.0.2:80
+01/01/2025-17:01:34.515127  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45348 -> 172.18.0.2:80
+01/01/2025-17:01:35.019355  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45364 -> 172.18.0.2:80
+01/01/2025-17:01:35.019575  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45364 -> 172.18.0.2:80
+01/01/2025-17:01:35.019575  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45364 -> 172.18.0.2:80
+01/01/2025-17:01:35.526079  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45378 -> 172.18.0.2:80
+01/01/2025-17:01:35.526079  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45378 -> 172.18.0.2:80
+01/01/2025-17:01:36.029847  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45382 -> 172.18.0.2:80
+01/01/2025-17:01:36.029847  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45382 -> 172.18.0.2:80
+01/01/2025-17:01:36.533361  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45390 -> 172.18.0.2:80
+01/01/2025-17:01:36.533361  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45390 -> 172.18.0.2:80
+01/01/2025-17:01:37.040426  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45404 -> 172.18.0.2:80
+01/01/2025-17:01:37.040426  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45404 -> 172.18.0.2:80
+01/01/2025-17:01:37.544577  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45416 -> 172.18.0.2:80
+01/01/2025-17:01:37.544739  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45416 -> 172.18.0.2:80
+01/01/2025-17:01:37.544739  [**] [1:1000005:1] SQL Injection Attempt - UNION Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45416 -> 172.18.0.2:80
+01/01/2025-17:01:37.544739  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45416 -> 172.18.0.2:80
+01/01/2025-17:01:37.544739  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45416 -> 172.18.0.2:80
+01/01/2025-17:01:38.048025  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45432 -> 172.18.0.2:80
+01/01/2025-17:01:38.048025  [**] [1:1000005:1] SQL Injection Attempt - UNION Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45432 -> 172.18.0.2:80
+01/01/2025-17:01:38.048025  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45432 -> 172.18.0.2:80
+01/01/2025-17:01:38.048025  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:45432 -> 172.18.0.2:80
+01/01/2025-17:01:38.549837  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56444 -> 172.18.0.2:80
+01/01/2025-17:01:38.549837  [**] [1:1000005:1] SQL Injection Attempt - UNION Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56444 -> 172.18.0.2:80
+01/01/2025-17:01:38.549837  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56444 -> 172.18.0.2:80
+01/01/2025-17:01:38.549837  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56444 -> 172.18.0.2:80
+01/01/2025-17:01:39.051823  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56460 -> 172.18.0.2:80
+01/01/2025-17:01:39.051823  [**] [1:1000005:1] SQL Injection Attempt - UNION Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56460 -> 172.18.0.2:80
+01/01/2025-17:01:39.051823  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56460 -> 172.18.0.2:80
+01/01/2025-17:01:39.051823  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56460 -> 172.18.0.2:80
+01/01/2025-17:01:39.558160  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56470 -> 172.18.0.2:80
+01/01/2025-17:01:39.558160  [**] [1:1000005:1] SQL Injection Attempt - UNION Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56470 -> 172.18.0.2:80
+01/01/2025-17:01:39.558160  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56470 -> 172.18.0.2:80
+01/01/2025-17:01:39.558160  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56470 -> 172.18.0.2:80
+01/01/2025-17:01:40.062042  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56482 -> 172.18.0.2:80
+01/01/2025-17:01:40.062184  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56482 -> 172.18.0.2:80
+01/01/2025-17:01:40.062184  [**] [1:1000005:1] SQL Injection Attempt - UNION Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56482 -> 172.18.0.2:80
+01/01/2025-17:01:40.062184  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56482 -> 172.18.0.2:80
+01/01/2025-17:01:40.062184  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56482 -> 172.18.0.2:80
+01/01/2025-17:01:40.565115  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56496 -> 172.18.0.2:80
+01/01/2025-17:01:40.565115  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56496 -> 172.18.0.2:80
+01/01/2025-17:01:40.565115  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56496 -> 172.18.0.2:80
+01/01/2025-17:01:41.067827  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56508 -> 172.18.0.2:80
+01/01/2025-17:01:41.067827  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56508 -> 172.18.0.2:80
+01/01/2025-17:01:41.067827  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56508 -> 172.18.0.2:80
+01/01/2025-17:01:41.570167  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56520 -> 172.18.0.2:80
+01/01/2025-17:01:41.570167  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56520 -> 172.18.0.2:80
+01/01/2025-17:01:41.570167  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56520 -> 172.18.0.2:80
+01/01/2025-17:01:42.071873  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56532 -> 172.18.0.2:80
+01/01/2025-17:01:42.071873  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56532 -> 172.18.0.2:80
+01/01/2025-17:01:42.071873  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56532 -> 172.18.0.2:80
+01/01/2025-17:01:42.573754  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56536 -> 172.18.0.2:80
+01/01/2025-17:01:42.573900  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56536 -> 172.18.0.2:80
+01/01/2025-17:01:42.573900  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56536 -> 172.18.0.2:80
+01/01/2025-17:01:42.573900  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56536 -> 172.18.0.2:80
+01/01/2025-17:01:43.079527  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56540 -> 172.18.0.2:80
+01/01/2025-17:01:43.079527  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56540 -> 172.18.0.2:80
+01/01/2025-17:01:43.079527  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56540 -> 172.18.0.2:80
+01/01/2025-17:01:43.581889  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56546 -> 172.18.0.2:80
+01/01/2025-17:01:44.083886  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56548 -> 172.18.0.2:80
+01/01/2025-17:01:44.587043  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56552 -> 172.18.0.2:80
+01/01/2025-17:01:45.090847  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56562 -> 172.18.0.2:80
+01/01/2025-17:01:45.091016  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56562 -> 172.18.0.2:80
+01/01/2025-17:01:45.594295  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56572 -> 172.18.0.2:80
+01/01/2025-17:01:46.097915  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56582 -> 172.18.0.2:80
+01/01/2025-17:01:46.604489  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56590 -> 172.18.0.2:80
+01/01/2025-17:01:46.604489  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56590 -> 172.18.0.2:80
+01/01/2025-17:01:46.604489  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56590 -> 172.18.0.2:80
+01/01/2025-17:01:47.107097  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56606 -> 172.18.0.2:80
+01/01/2025-17:01:47.107097  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56606 -> 172.18.0.2:80
+01/01/2025-17:01:47.107097  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56606 -> 172.18.0.2:80
+01/01/2025-17:01:47.608873  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56620 -> 172.18.0.2:80
+01/01/2025-17:01:47.609039  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56620 -> 172.18.0.2:80
+01/01/2025-17:01:47.609039  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56620 -> 172.18.0.2:80
+01/01/2025-17:01:47.609039  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56620 -> 172.18.0.2:80
+01/01/2025-17:01:48.110951  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56628 -> 172.18.0.2:80
+01/01/2025-17:01:48.110951  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56628 -> 172.18.0.2:80
+01/01/2025-17:01:48.110951  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56628 -> 172.18.0.2:80
+01/01/2025-17:01:48.616318  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47240 -> 172.18.0.2:80
+01/01/2025-17:01:48.616318  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47240 -> 172.18.0.2:80
+01/01/2025-17:01:48.616318  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47240 -> 172.18.0.2:80
+01/01/2025-17:01:49.119956  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47244 -> 172.18.0.2:80
+01/01/2025-17:01:49.119956  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47244 -> 172.18.0.2:80
+01/01/2025-17:01:49.119956  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47244 -> 172.18.0.2:80
+01/01/2025-17:01:51.627049  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47252 -> 172.18.0.2:80
+01/01/2025-17:01:51.633342  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47278 -> 172.18.0.2:80
+01/01/2025-17:01:51.636168  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47318 -> 172.18.0.2:80
+01/01/2025-17:01:51.639507  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47356 -> 172.18.0.2:80
+01/01/2025-17:01:51.644757  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47400 -> 172.18.0.2:80
+01/01/2025-17:01:51.647901  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47446 -> 172.18.0.2:80
+01/01/2025-17:01:51.651208  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47492 -> 172.18.0.2:80
+01/01/2025-17:01:51.656447  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47530 -> 172.18.0.2:80
+01/01/2025-17:01:51.660078  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47576 -> 172.18.0.2:80
+01/01/2025-17:01:51.664162  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47624 -> 172.18.0.2:80
+01/01/2025-17:01:51.667285  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47676 -> 172.18.0.2:80
+01/01/2025-17:01:51.670906  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47720 -> 172.18.0.2:80
+01/01/2025-17:01:51.674723  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47752 -> 172.18.0.2:80
+01/01/2025-17:01:51.678264  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47794 -> 172.18.0.2:80
+01/01/2025-17:01:51.681957  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47840 -> 172.18.0.2:80
+01/01/2025-17:01:51.685070  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47886 -> 172.18.0.2:80
+01/01/2025-17:01:51.689627  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:47952 -> 172.18.0.2:80
+01/01/2025-17:01:51.694231  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:48014 -> 172.18.0.2:80
+01/01/2025-17:01:51.696687  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:48068 -> 172.18.0.2:80
+01/01/2025-17:01:51.701264  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:48134 -> 172.18.0.2:80
+01/01/2025-17:01:51.703369  [**] [1:1000009:1] Potential DDoS Attack Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:48152 -> 172.18.0.2:80
+01/01/2025-17:07:08.121986  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59872 -> 172.18.0.2:80
+01/01/2025-17:07:08.136027  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:59872 -> 172.18.0.2:80
+01/01/2025-17:07:09.152310  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37566 -> 172.18.0.2:80
+01/01/2025-17:07:10.159077  [**] [1:1000001:1] Admin Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37580 -> 172.18.0.2:80
+01/01/2025-17:07:11.167660  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37590 -> 172.18.0.2:80
+01/01/2025-17:07:12.174515  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37594 -> 172.18.0.2:80
+01/01/2025-17:07:13.180145  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37610 -> 172.18.0.2:80
+01/01/2025-17:07:13.180569  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37610 -> 172.18.0.2:80
+01/01/2025-17:07:14.185000  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37622 -> 172.18.0.2:80
+01/01/2025-17:07:15.189944  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37638 -> 172.18.0.2:80
+01/01/2025-17:07:16.199510  [**] [1:1000003:1] Configuration Access Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:37650 -> 172.18.0.2:80
+01/01/2025-17:07:19.214707  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40236 -> 172.18.0.2:80
+01/01/2025-17:07:19.214707  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40236 -> 172.18.0.2:80
+01/01/2025-17:07:19.720424  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40242 -> 172.18.0.2:80
+01/01/2025-17:07:19.720681  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40242 -> 172.18.0.2:80
+01/01/2025-17:07:19.720681  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40242 -> 172.18.0.2:80
+01/01/2025-17:07:20.226331  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40248 -> 172.18.0.2:80
+01/01/2025-17:07:20.226331  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40248 -> 172.18.0.2:80
+01/01/2025-17:07:20.732536  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40256 -> 172.18.0.2:80
+01/01/2025-17:07:20.732536  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40256 -> 172.18.0.2:80
+01/01/2025-17:07:21.237456  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40268 -> 172.18.0.2:80
+01/01/2025-17:07:21.237456  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40268 -> 172.18.0.2:80
+01/01/2025-17:07:21.742303  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40270 -> 172.18.0.2:80
+01/01/2025-17:07:21.742303  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40270 -> 172.18.0.2:80
+01/01/2025-17:07:22.249975  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40286 -> 172.18.0.2:80
+01/01/2025-17:07:22.250545  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40286 -> 172.18.0.2:80
+01/01/2025-17:07:22.250545  [**] [1:1000005:1] SQL Injection Attempt - UNION Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40286 -> 172.18.0.2:80
+01/01/2025-17:07:22.250545  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40286 -> 172.18.0.2:80
+01/01/2025-17:07:22.250545  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40286 -> 172.18.0.2:80
+01/01/2025-17:07:22.756624  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40302 -> 172.18.0.2:80
+01/01/2025-17:07:22.756624  [**] [1:1000005:1] SQL Injection Attempt - UNION Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40302 -> 172.18.0.2:80
+01/01/2025-17:07:22.756624  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40302 -> 172.18.0.2:80
+01/01/2025-17:07:22.756624  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40302 -> 172.18.0.2:80
+01/01/2025-17:07:23.265354  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40304 -> 172.18.0.2:80
+01/01/2025-17:07:23.265354  [**] [1:1000005:1] SQL Injection Attempt - UNION Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40304 -> 172.18.0.2:80
+01/01/2025-17:07:23.265354  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40304 -> 172.18.0.2:80
+01/01/2025-17:07:23.265354  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40304 -> 172.18.0.2:80
+01/01/2025-17:07:23.773708  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40316 -> 172.18.0.2:80
+01/01/2025-17:07:23.773708  [**] [1:1000005:1] SQL Injection Attempt - UNION Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40316 -> 172.18.0.2:80
+01/01/2025-17:07:23.773708  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40316 -> 172.18.0.2:80
+01/01/2025-17:07:23.773708  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40316 -> 172.18.0.2:80
+01/01/2025-17:07:24.280965  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40330 -> 172.18.0.2:80
+01/01/2025-17:07:24.280965  [**] [1:1000005:1] SQL Injection Attempt - UNION Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40330 -> 172.18.0.2:80
+01/01/2025-17:07:24.280965  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40330 -> 172.18.0.2:80
+01/01/2025-17:07:24.280965  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40330 -> 172.18.0.2:80
+01/01/2025-17:07:24.806782  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40340 -> 172.18.0.2:80
+01/01/2025-17:07:24.807154  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40340 -> 172.18.0.2:80
+01/01/2025-17:07:24.807154  [**] [1:1000005:1] SQL Injection Attempt - UNION Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40340 -> 172.18.0.2:80
+01/01/2025-17:07:24.807154  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40340 -> 172.18.0.2:80
+01/01/2025-17:07:24.807154  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40340 -> 172.18.0.2:80
+01/01/2025-17:07:25.317746  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40350 -> 172.18.0.2:80
+01/01/2025-17:07:25.317746  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40350 -> 172.18.0.2:80
+01/01/2025-17:07:25.317746  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40350 -> 172.18.0.2:80
+01/01/2025-17:07:25.823458  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40358 -> 172.18.0.2:80
+01/01/2025-17:07:25.823458  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40358 -> 172.18.0.2:80
+01/01/2025-17:07:25.823458  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40358 -> 172.18.0.2:80
+01/01/2025-17:07:26.332972  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40364 -> 172.18.0.2:80
+01/01/2025-17:07:26.332972  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40364 -> 172.18.0.2:80
+01/01/2025-17:07:26.332972  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40364 -> 172.18.0.2:80
+01/01/2025-17:07:26.836730  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40372 -> 172.18.0.2:80
+01/01/2025-17:07:26.836730  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40372 -> 172.18.0.2:80
+01/01/2025-17:07:26.836730  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40372 -> 172.18.0.2:80
+01/01/2025-17:07:27.341210  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40374 -> 172.18.0.2:80
+01/01/2025-17:07:27.341405  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40374 -> 172.18.0.2:80
+01/01/2025-17:07:27.341405  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40374 -> 172.18.0.2:80
+01/01/2025-17:07:27.341405  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40374 -> 172.18.0.2:80
+01/01/2025-17:07:27.848752  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40386 -> 172.18.0.2:80
+01/01/2025-17:07:27.848752  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40386 -> 172.18.0.2:80
+01/01/2025-17:07:27.848752  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40386 -> 172.18.0.2:80
+01/01/2025-17:07:28.357123  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:40398 -> 172.18.0.2:80
+01/01/2025-17:07:28.862072  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56622 -> 172.18.0.2:80
+01/01/2025-17:07:29.371468  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56632 -> 172.18.0.2:80
+01/01/2025-17:07:29.873831  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56648 -> 172.18.0.2:80
+01/01/2025-17:07:29.873929  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56648 -> 172.18.0.2:80
+01/01/2025-17:07:30.376565  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56652 -> 172.18.0.2:80
+01/01/2025-17:07:30.882026  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56660 -> 172.18.0.2:80
+01/01/2025-17:07:31.385734  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56668 -> 172.18.0.2:80
+01/01/2025-17:07:31.385734  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56668 -> 172.18.0.2:80
+01/01/2025-17:07:31.385734  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56668 -> 172.18.0.2:80
+01/01/2025-17:07:31.888244  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56670 -> 172.18.0.2:80
+01/01/2025-17:07:31.888244  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56670 -> 172.18.0.2:80
+01/01/2025-17:07:31.888244  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56670 -> 172.18.0.2:80
+01/01/2025-17:07:32.395864  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56674 -> 172.18.0.2:80
+01/01/2025-17:07:32.396716  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56674 -> 172.18.0.2:80
+01/01/2025-17:07:32.396716  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56674 -> 172.18.0.2:80
+01/01/2025-17:07:32.396716  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56674 -> 172.18.0.2:80
+01/01/2025-17:07:32.904063  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56678 -> 172.18.0.2:80
+01/01/2025-17:07:32.904063  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56678 -> 172.18.0.2:80
+01/01/2025-17:07:32.904063  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56678 -> 172.18.0.2:80
+01/01/2025-17:07:33.410281  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56690 -> 172.18.0.2:80
+01/01/2025-17:07:33.410281  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56690 -> 172.18.0.2:80
+01/01/2025-17:07:33.410281  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56690 -> 172.18.0.2:80
+01/01/2025-17:07:33.917513  [**] [1:1000002:1] Suspicious Login Attempt Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56706 -> 172.18.0.2:80
+01/01/2025-17:07:33.917513  [**] [1:1000007:1] SQL Injection Attempt - Comment [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56706 -> 172.18.0.2:80
+01/01/2025-17:07:33.917513  [**] [1:1000008:1] SQL Injection Attempt - Single Quote [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56706 -> 172.18.0.2:80
+01/01/2025-17:07:36.429195  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56726 -> 172.18.0.2:80
+01/01/2025-17:07:36.442741  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56796 -> 172.18.0.2:80
+01/01/2025-17:07:36.446053  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56840 -> 172.18.0.2:80
+01/01/2025-17:07:36.449672  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56876 -> 172.18.0.2:80
+01/01/2025-17:07:36.453925  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56920 -> 172.18.0.2:80
+01/01/2025-17:07:36.456987  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:56970 -> 172.18.0.2:80
+01/01/2025-17:07:36.461843  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:57026 -> 172.18.0.2:80
+01/01/2025-17:07:36.464487  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:57072 -> 172.18.0.2:80
+01/01/2025-17:07:36.468266  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:57118 -> 172.18.0.2:80
+01/01/2025-17:07:36.471081  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:57168 -> 172.18.0.2:80
+01/01/2025-17:07:36.475432  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:57204 -> 172.18.0.2:80
+01/01/2025-17:07:36.478330  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:57242 -> 172.18.0.2:80
+01/01/2025-17:07:36.483218  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:57284 -> 172.18.0.2:80
+01/01/2025-17:07:36.486951  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:57340 -> 172.18.0.2:80
+01/01/2025-17:07:36.489526  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:57370 -> 172.18.0.2:80
+01/01/2025-17:07:36.493238  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:57408 -> 172.18.0.2:80
+01/01/2025-17:07:36.497154  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:57438 -> 172.18.0.2:80
+01/01/2025-17:07:36.503850  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:57482 -> 172.18.0.2:80
+01/01/2025-17:07:36.509007  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:57528 -> 172.18.0.2:80
+01/01/2025-17:07:36.514830  [**] [1:1000004:1] Potential Port Scan Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:57546 -> 172.18.0.2:80
+01/01/2025-17:07:36.516195  [**] [1:1000009:1] Potential DDoS Attack Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.18.0.4:57580 -> 172.18.0.2:80

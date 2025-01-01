@@ -1530,3 +1530,509 @@
 1/1/2025 -- 14:53:21 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
 1/1/2025 -- 14:53:21 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
 1/1/2025 -- 14:53:21 - <Info> - All AFP capture threads are running.
+1/1/2025 -- 16:43:33 - <Notice> - Signal Received.  Stopping engine.
+1/1/2025 -- 16:43:33 - <Perf> - 0 new flows, 0 established flows were timed out, 0 flows in closed state
+1/1/2025 -- 16:43:33 - <Info> - time elapsed 6612.630s
+1/1/2025 -- 16:43:33 - <Perf> - 105 flows processed
+1/1/2025 -- 16:43:33 - <Perf> - (W#01-eth0) Kernel: Packets 140, dropped 0
+1/1/2025 -- 16:43:33 - <Perf> - (W#02-eth0) Kernel: Packets 88, dropped 0
+1/1/2025 -- 16:43:33 - <Perf> - (W#03-eth0) Kernel: Packets 54, dropped 0
+1/1/2025 -- 16:43:33 - <Perf> - (W#04-eth0) Kernel: Packets 209, dropped 0
+1/1/2025 -- 16:43:33 - <Perf> - (W#05-eth0) Kernel: Packets 105, dropped 0
+1/1/2025 -- 16:43:33 - <Perf> - (W#06-eth0) Kernel: Packets 83, dropped 0
+1/1/2025 -- 16:43:33 - <Perf> - (W#07-eth0) Kernel: Packets 113, dropped 0
+1/1/2025 -- 16:43:33 - <Perf> - (W#08-eth0) Kernel: Packets 84, dropped 0
+1/1/2025 -- 16:43:34 - <Perf> - ippair memory usage: 422144 bytes, maximum: 16777216
+1/1/2025 -- 16:43:34 - <Perf> - host memory usage: 406144 bytes, maximum: 16777216
+1/1/2025 -- 16:43:34 - <Info> - cleaning up signature grouping structure... complete
+1/1/2025 -- 16:43:34 - <Notice> - Stats for 'eth0':  pkts: 876, drop: 0 (0.00%), invalid chksum: 0
+1/1/2025 -- 16:43:34 - <Perf> - eth0: restoring tso offloading
+1/1/2025 -- 16:43:34 - <Perf> - eth0: restoring gso offloading
+1/1/2025 -- 16:43:34 - <Perf> - eth0: restoring sg offloading
+1/1/2025 -- 16:43:56 - <Notice> - This is Suricata version 6.0.4 RELEASE running in SYSTEM mode
+1/1/2025 -- 16:43:56 - <Info> - CPUs/cores online: 8
+1/1/2025 -- 16:43:56 - <Config> - 'default' server has 'request-body-minimal-inspect-size' set to 32867 and 'request-body-inspect-window' set to 4267 after randomization.
+1/1/2025 -- 16:43:56 - <Config> - 'default' server has 'response-body-minimal-inspect-size' set to 31577 and 'response-body-inspect-window' set to 4081 after randomization.
+1/1/2025 -- 16:43:56 - <Config> - no TLS config found, enabling TLS detection on port 443.
+1/1/2025 -- 16:43:56 - <Config> - no SMB TCP config found, enabling SMB detection on port 445.
+1/1/2025 -- 16:43:56 - <Config> - SMB stream depth: 0
+1/1/2025 -- 16:43:56 - <Info> - Found an MTU of 1500 for 'eth0'
+1/1/2025 -- 16:43:56 - <Info> - Found an MTU of 1500 for 'eth0'
+1/1/2025 -- 16:43:56 - <Config> - allocated 262144 bytes of memory for the host hash... 4096 buckets of size 64
+1/1/2025 -- 16:43:56 - <Config> - preallocated 1000 hosts of size 144
+1/1/2025 -- 16:43:56 - <Config> - host memory usage: 406144 bytes, maximum: 16777216
+1/1/2025 -- 16:43:56 - <Error> - [ERRCODE: SC_ERR_INVALID_VALUE(130)] - Problem with config file
+1/1/2025 -- 16:43:56 - <Info> - No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+1/1/2025 -- 16:43:56 - <Config> - allocated 262144 bytes of memory for the defrag hash... 4096 buckets of size 64
+1/1/2025 -- 16:43:56 - <Config> - defrag memory usage: 262144 bytes, maximum: 16777216
+1/1/2025 -- 16:43:56 - <Config> - flow size 336, memcap allows for 0 flows. Per hash row in perfect conditions 0
+1/1/2025 -- 16:43:56 - <Config> - stream "prealloc-sessions": 2048 (per thread)
+1/1/2025 -- 16:43:56 - <Config> - stream "memcap": 67108864
+1/1/2025 -- 16:43:56 - <Config> - stream "midstream" session pickups: disabled
+1/1/2025 -- 16:43:56 - <Config> - stream "async-oneside": disabled
+1/1/2025 -- 16:43:56 - <Config> - stream "checksum-validation": enabled
+1/1/2025 -- 16:43:56 - <Config> - stream."inline": disabled
+1/1/2025 -- 16:43:56 - <Config> - stream "bypass": disabled
+1/1/2025 -- 16:43:56 - <Config> - stream "max-synack-queued": 5
+1/1/2025 -- 16:43:56 - <Config> - stream.reassembly "memcap": 268435456
+1/1/2025 -- 16:43:56 - <Config> - stream.reassembly "depth": 0
+1/1/2025 -- 16:43:56 - <Config> - stream.reassembly "toserver-chunk-size": 2638
+1/1/2025 -- 16:43:56 - <Config> - stream.reassembly "toclient-chunk-size": 2512
+1/1/2025 -- 16:43:56 - <Config> - stream.reassembly.raw: enabled
+1/1/2025 -- 16:43:56 - <Config> - stream.reassembly "segment-prealloc": 2048
+1/1/2025 -- 16:43:56 - <Info> - fast output device (regular) initialized: /var/log/suricata/fast.log
+1/1/2025 -- 16:43:56 - <Info> - eve-log output device (regular) initialized: /var/log/suricata/eve.json
+1/1/2025 -- 16:43:56 - <Config> - enabling 'eve-log' module 'alert'
+1/1/2025 -- 16:43:56 - <Config> - enabling 'eve-log' module 'http'
+1/1/2025 -- 16:43:56 - <Warning> - [ERRCODE: SC_WARN_NO_STATS_LOGGERS(261)] - stats are enabled but no loggers are active
+1/1/2025 -- 16:43:56 - <Config> - Delayed detect disabled
+1/1/2025 -- 16:43:56 - <Config> - pattern matchers: MPM: ac, SPM: bm
+1/1/2025 -- 16:43:56 - <Config> - grouping: tcp-whitelist (default) 53, 80, 139, 443, 445, 1433, 3306, 3389, 6666, 6667, 8080
+1/1/2025 -- 16:43:56 - <Config> - grouping: udp-whitelist (default) 53, 135, 5060
+1/1/2025 -- 16:43:56 - <Config> - prefilter engines: MPM
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_uri
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_uri
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_raw_uri
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_raw_uri
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_request_line
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_client_body
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_response_line
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_header
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_header
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_header
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_header
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_header_names
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_header_names
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_header_names
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_header_names
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_accept
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_accept
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_accept_enc
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_accept_enc
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_accept_lang
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_accept_lang
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_referer
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_referer
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_connection
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_connection
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_content_len
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_content_len
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_content_len
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_content_len
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_content_type
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_content_type
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_content_type
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_content_type
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http.server
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http.server
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http.location
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http.location
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_protocol
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_protocol
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_start
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_start
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_raw_header
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_raw_header
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_raw_header
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_raw_header
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_method
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_method
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_cookie
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_cookie
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_cookie
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_cookie
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_user_agent
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_user_agent
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_host
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_host
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_raw_host
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_raw_host
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_stat_msg
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_stat_code
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http_stat_code
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http2_header_name
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http2_header_name
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http2_header
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for http2_header
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for dns_query
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for dnp3_data
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for dnp3_data
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for tls.sni
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for tls.cert_issuer
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for tls.cert_subject
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for tls.cert_serial
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for tls.cert_fingerprint
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for tls.certs
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for ja3.hash
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for ja3.string
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for ja3s.hash
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for ja3s.string
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for dce_stub_data
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for dce_stub_data
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for dce_stub_data
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for dce_stub_data
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for smb_named_pipe
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for smb_share
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for ssh.proto
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for ssh.proto
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for ssh_software
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for ssh_software
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for ssh.hassh
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for ssh.hassh.server
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for ssh.hassh.string
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for ssh.hassh.server.string
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file_data
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file_data
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file_data
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file_data
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file_data
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for file_data
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for krb5_cname
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for krb5_sname
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for sip.method
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for sip.uri
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for sip.protocol
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for sip.protocol
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for sip.method
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for sip.stat_msg
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for sip.request_line
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for sip.response_line
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for rfb.name
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for snmp.community
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for snmp.community
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for mqtt.connect.clientid
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for mqtt.connect.username
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for mqtt.connect.password
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for mqtt.connect.willtopic
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for mqtt.connect.willmessage
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for mqtt.publish.topic
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for mqtt.publish.message
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for mqtt.subscribe.topic
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for mqtt.unsubscribe.topic
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for icmpv4.hdr
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for tcp.hdr
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for udp.hdr
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for icmpv6.hdr
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for ipv4.hdr
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for ipv6.hdr
+1/1/2025 -- 16:43:56 - <Config> - IP reputation disabled
+1/1/2025 -- 16:43:56 - <Config> - Loading rule file: /etc/suricata/rules/custom.rules
+1/1/2025 -- 16:43:56 - <Info> - 1 rule files processed. 6 rules successfully loaded, 0 rules failed
+1/1/2025 -- 16:43:56 - <Info> - Threshold config parsed: 0 rule(s) found
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for tcp-packet
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for tcp-stream
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for udp-packet
+1/1/2025 -- 16:43:56 - <Perf> - using shared mpm ctx' for other-ip
+1/1/2025 -- 16:43:56 - <Info> - 6 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 4 inspect application layer, 0 are decoder event only
+1/1/2025 -- 16:43:56 - <Config> - building signature grouping structure, stage 1: preprocessing rules... complete
+1/1/2025 -- 16:43:56 - <Perf> - TCP toserver: 1 port groups, 1 unique SGH's, 0 copies
+1/1/2025 -- 16:43:56 - <Perf> - TCP toclient: 1 port groups, 1 unique SGH's, 0 copies
+1/1/2025 -- 16:43:56 - <Perf> - UDP toserver: 0 port groups, 0 unique SGH's, 0 copies
+1/1/2025 -- 16:43:56 - <Perf> - UDP toclient: 0 port groups, 0 unique SGH's, 0 copies
+1/1/2025 -- 16:43:56 - <Perf> - OTHER toserver: 0 proto groups, 0 unique SGH's, 0 copies
+1/1/2025 -- 16:43:56 - <Perf> - OTHER toclient: 0 proto groups, 0 unique SGH's, 0 copies
+1/1/2025 -- 16:43:56 - <Perf> - Unique rule groups: 2
+1/1/2025 -- 16:43:56 - <Perf> - Builtin MPM "toserver TCP packet": 0
+1/1/2025 -- 16:43:56 - <Perf> - Builtin MPM "toclient TCP packet": 0
+1/1/2025 -- 16:43:56 - <Perf> - Builtin MPM "toserver TCP stream": 0
+1/1/2025 -- 16:43:56 - <Perf> - Builtin MPM "toclient TCP stream": 0
+1/1/2025 -- 16:43:56 - <Perf> - Builtin MPM "toserver UDP packet": 0
+1/1/2025 -- 16:43:56 - <Perf> - Builtin MPM "toclient UDP packet": 0
+1/1/2025 -- 16:43:56 - <Perf> - Builtin MPM "other IP packet": 0
+1/1/2025 -- 16:43:56 - <Perf> - AppLayer MPM "toserver http_uri (http)": 1
+1/1/2025 -- 16:43:56 - <Perf> - AppLayer MPM "toserver http_uri (http2)": 1
+1/1/2025 -- 16:43:56 - <Info> - unable to find af-packet config for interface "eth0" or "default", using default values
+1/1/2025 -- 16:43:56 - <Perf> - 8 cores, so using 8 threads
+1/1/2025 -- 16:43:56 - <Perf> - Using 8 AF_PACKET threads for interface eth0
+1/1/2025 -- 16:43:56 - <Perf> - eth0: disabling tso offloading
+1/1/2025 -- 16:43:56 - <Perf> - eth0: disabling gso offloading
+1/1/2025 -- 16:43:56 - <Perf> - eth0: disabling sg offloading
+1/1/2025 -- 16:43:56 - <Config> - eth0: enabling zero copy mode by using data release call
+1/1/2025 -- 16:43:56 - <Info> - Going to use 8 thread(s)
+1/1/2025 -- 16:43:56 - <Config> - using 1 flow manager threads
+1/1/2025 -- 16:43:56 - <Config> - using 1 flow recycler threads
+1/1/2025 -- 16:43:56 - <Notice> - all 8 packet processing threads, 2 management threads initialized, engine started.
+1/1/2025 -- 16:43:56 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
+1/1/2025 -- 16:43:56 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
+1/1/2025 -- 16:43:56 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
+1/1/2025 -- 16:43:56 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
+1/1/2025 -- 16:43:56 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
+1/1/2025 -- 16:43:56 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
+1/1/2025 -- 16:43:56 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
+1/1/2025 -- 16:43:56 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
+1/1/2025 -- 16:43:56 - <Info> - All AFP capture threads are running.
+1/1/2025 -- 17:00:42 - <Notice> - Signal Received.  Stopping engine.
+1/1/2025 -- 17:00:42 - <Perf> - 0 new flows, 0 established flows were timed out, 0 flows in closed state
+1/1/2025 -- 17:00:42 - <Info> - time elapsed 1006.097s
+1/1/2025 -- 17:00:42 - <Perf> - 241 flows processed
+1/1/2025 -- 17:00:42 - <Perf> - (W#01-eth0) Kernel: Packets 240, dropped 0
+1/1/2025 -- 17:00:42 - <Perf> - (W#02-eth0) Kernel: Packets 319, dropped 0
+1/1/2025 -- 17:00:42 - <Perf> - (W#03-eth0) Kernel: Packets 272, dropped 0
+1/1/2025 -- 17:00:42 - <Perf> - (W#04-eth0) Kernel: Packets 304, dropped 0
+1/1/2025 -- 17:00:42 - <Perf> - (W#05-eth0) Kernel: Packets 242, dropped 0
+1/1/2025 -- 17:00:43 - <Perf> - (W#06-eth0) Kernel: Packets 292, dropped 0
+1/1/2025 -- 17:00:43 - <Perf> - (W#07-eth0) Kernel: Packets 343, dropped 0
+1/1/2025 -- 17:00:43 - <Perf> - (W#08-eth0) Kernel: Packets 323, dropped 0
+1/1/2025 -- 17:00:43 - <Perf> - ippair memory usage: 422144 bytes, maximum: 16777216
+1/1/2025 -- 17:00:43 - <Perf> - host memory usage: 406144 bytes, maximum: 16777216
+1/1/2025 -- 17:00:43 - <Info> - cleaning up signature grouping structure... complete
+1/1/2025 -- 17:00:43 - <Notice> - Stats for 'eth0':  pkts: 2335, drop: 0 (0.00%), invalid chksum: 0
+1/1/2025 -- 17:00:43 - <Perf> - eth0: restoring tso offloading
+1/1/2025 -- 17:00:43 - <Perf> - eth0: restoring gso offloading
+1/1/2025 -- 17:00:43 - <Perf> - eth0: restoring sg offloading
+1/1/2025 -- 17:00:59 - <Notice> - This is Suricata version 6.0.4 RELEASE running in SYSTEM mode
+1/1/2025 -- 17:00:59 - <Info> - CPUs/cores online: 8
+1/1/2025 -- 17:00:59 - <Config> - 'default' server has 'request-body-minimal-inspect-size' set to 34293 and 'request-body-inspect-window' set to 4140 after randomization.
+1/1/2025 -- 17:00:59 - <Config> - 'default' server has 'response-body-minimal-inspect-size' set to 33451 and 'response-body-inspect-window' set to 4259 after randomization.
+1/1/2025 -- 17:00:59 - <Config> - no TLS config found, enabling TLS detection on port 443.
+1/1/2025 -- 17:00:59 - <Config> - no SMB TCP config found, enabling SMB detection on port 445.
+1/1/2025 -- 17:00:59 - <Config> - SMB stream depth: 0
+1/1/2025 -- 17:00:59 - <Info> - Found an MTU of 1500 for 'eth0'
+1/1/2025 -- 17:00:59 - <Info> - Found an MTU of 1500 for 'eth0'
+1/1/2025 -- 17:00:59 - <Config> - allocated 262144 bytes of memory for the host hash... 4096 buckets of size 64
+1/1/2025 -- 17:00:59 - <Config> - preallocated 1000 hosts of size 144
+1/1/2025 -- 17:00:59 - <Config> - host memory usage: 406144 bytes, maximum: 16777216
+1/1/2025 -- 17:00:59 - <Error> - [ERRCODE: SC_ERR_INVALID_VALUE(130)] - Problem with config file
+1/1/2025 -- 17:00:59 - <Info> - No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+1/1/2025 -- 17:00:59 - <Config> - allocated 262144 bytes of memory for the defrag hash... 4096 buckets of size 64
+1/1/2025 -- 17:00:59 - <Config> - defrag memory usage: 262144 bytes, maximum: 16777216
+1/1/2025 -- 17:00:59 - <Config> - flow size 336, memcap allows for 0 flows. Per hash row in perfect conditions 0
+1/1/2025 -- 17:00:59 - <Config> - stream "prealloc-sessions": 2048 (per thread)
+1/1/2025 -- 17:00:59 - <Config> - stream "memcap": 67108864
+1/1/2025 -- 17:00:59 - <Config> - stream "midstream" session pickups: disabled
+1/1/2025 -- 17:00:59 - <Config> - stream "async-oneside": disabled
+1/1/2025 -- 17:00:59 - <Config> - stream "checksum-validation": enabled
+1/1/2025 -- 17:00:59 - <Config> - stream."inline": disabled
+1/1/2025 -- 17:00:59 - <Config> - stream "bypass": disabled
+1/1/2025 -- 17:00:59 - <Config> - stream "max-synack-queued": 5
+1/1/2025 -- 17:00:59 - <Config> - stream.reassembly "memcap": 268435456
+1/1/2025 -- 17:00:59 - <Config> - stream.reassembly "depth": 0
+1/1/2025 -- 17:00:59 - <Config> - stream.reassembly "toserver-chunk-size": 2656
+1/1/2025 -- 17:00:59 - <Config> - stream.reassembly "toclient-chunk-size": 2635
+1/1/2025 -- 17:00:59 - <Config> - stream.reassembly.raw: enabled
+1/1/2025 -- 17:00:59 - <Config> - stream.reassembly "segment-prealloc": 2048
+1/1/2025 -- 17:00:59 - <Info> - fast output device (regular) initialized: /var/log/suricata/fast.log
+1/1/2025 -- 17:00:59 - <Info> - eve-log output device (regular) initialized: /var/log/suricata/eve.json
+1/1/2025 -- 17:00:59 - <Config> - enabling 'eve-log' module 'alert'
+1/1/2025 -- 17:00:59 - <Config> - enabling 'eve-log' module 'http'
+1/1/2025 -- 17:00:59 - <Warning> - [ERRCODE: SC_WARN_NO_STATS_LOGGERS(261)] - stats are enabled but no loggers are active
+1/1/2025 -- 17:00:59 - <Config> - Delayed detect disabled
+1/1/2025 -- 17:00:59 - <Config> - pattern matchers: MPM: ac, SPM: bm
+1/1/2025 -- 17:00:59 - <Config> - grouping: tcp-whitelist (default) 53, 80, 139, 443, 445, 1433, 3306, 3389, 6666, 6667, 8080
+1/1/2025 -- 17:00:59 - <Config> - grouping: udp-whitelist (default) 53, 135, 5060
+1/1/2025 -- 17:00:59 - <Config> - prefilter engines: MPM
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_uri
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_uri
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_raw_uri
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_raw_uri
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_request_line
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_client_body
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_response_line
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_header
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_header
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_header
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_header
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_header_names
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_header_names
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_header_names
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_header_names
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_accept
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_accept
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_accept_enc
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_accept_enc
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_accept_lang
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_accept_lang
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_referer
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_referer
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_connection
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_connection
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_content_len
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_content_len
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_content_len
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_content_len
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_content_type
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_content_type
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_content_type
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_content_type
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http.server
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http.server
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http.location
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http.location
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_protocol
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_protocol
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_start
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_start
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_raw_header
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_raw_header
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_raw_header
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_raw_header
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_method
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_method
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_cookie
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_cookie
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_cookie
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_cookie
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.name
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file.magic
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_user_agent
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_user_agent
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_host
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_host
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_raw_host
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_raw_host
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_stat_msg
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_stat_code
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http_stat_code
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http2_header_name
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http2_header_name
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http2_header
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for http2_header
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for dns_query
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for dnp3_data
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for dnp3_data
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for tls.sni
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for tls.cert_issuer
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for tls.cert_subject
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for tls.cert_serial
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for tls.cert_fingerprint
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for tls.certs
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for ja3.hash
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for ja3.string
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for ja3s.hash
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for ja3s.string
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for dce_stub_data
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for dce_stub_data
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for dce_stub_data
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for dce_stub_data
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for smb_named_pipe
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for smb_share
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for ssh.proto
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for ssh.proto
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for ssh_software
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for ssh_software
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for ssh.hassh
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for ssh.hassh.server
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for ssh.hassh.string
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for ssh.hassh.server.string
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file_data
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file_data
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file_data
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file_data
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file_data
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for file_data
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for krb5_cname
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for krb5_sname
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for sip.method
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for sip.uri
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for sip.protocol
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for sip.protocol
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for sip.method
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for sip.stat_msg
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for sip.request_line
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for sip.response_line
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for rfb.name
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for snmp.community
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for snmp.community
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for mqtt.connect.clientid
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for mqtt.connect.username
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for mqtt.connect.password
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for mqtt.connect.willtopic
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for mqtt.connect.willmessage
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for mqtt.publish.topic
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for mqtt.publish.message
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for mqtt.subscribe.topic
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for mqtt.unsubscribe.topic
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for icmpv4.hdr
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for tcp.hdr
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for udp.hdr
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for icmpv6.hdr
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for ipv4.hdr
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for ipv6.hdr
+1/1/2025 -- 17:00:59 - <Config> - IP reputation disabled
+1/1/2025 -- 17:00:59 - <Config> - Loading rule file: /etc/suricata/rules/custom.rules
+1/1/2025 -- 17:00:59 - <Info> - 1 rule files processed. 9 rules successfully loaded, 0 rules failed
+1/1/2025 -- 17:00:59 - <Info> - Threshold config parsed: 0 rule(s) found
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for tcp-packet
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for tcp-stream
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for udp-packet
+1/1/2025 -- 17:00:59 - <Perf> - using shared mpm ctx' for other-ip
+1/1/2025 -- 17:00:59 - <Info> - 9 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 7 inspect application layer, 0 are decoder event only
+1/1/2025 -- 17:00:59 - <Config> - building signature grouping structure, stage 1: preprocessing rules... complete
+1/1/2025 -- 17:00:59 - <Perf> - TCP toserver: 1 port groups, 1 unique SGH's, 0 copies
+1/1/2025 -- 17:00:59 - <Perf> - TCP toclient: 1 port groups, 1 unique SGH's, 0 copies
+1/1/2025 -- 17:00:59 - <Perf> - UDP toserver: 0 port groups, 0 unique SGH's, 0 copies
+1/1/2025 -- 17:00:59 - <Perf> - UDP toclient: 0 port groups, 0 unique SGH's, 0 copies
+1/1/2025 -- 17:00:59 - <Perf> - OTHER toserver: 0 proto groups, 0 unique SGH's, 0 copies
+1/1/2025 -- 17:00:59 - <Perf> - OTHER toclient: 0 proto groups, 0 unique SGH's, 0 copies
+1/1/2025 -- 17:00:59 - <Perf> - Unique rule groups: 2
+1/1/2025 -- 17:00:59 - <Perf> - Builtin MPM "toserver TCP packet": 0
+1/1/2025 -- 17:00:59 - <Perf> - Builtin MPM "toclient TCP packet": 0
+1/1/2025 -- 17:00:59 - <Perf> - Builtin MPM "toserver TCP stream": 0
+1/1/2025 -- 17:00:59 - <Perf> - Builtin MPM "toclient TCP stream": 0
+1/1/2025 -- 17:00:59 - <Perf> - Builtin MPM "toserver UDP packet": 0
+1/1/2025 -- 17:00:59 - <Perf> - Builtin MPM "toclient UDP packet": 0
+1/1/2025 -- 17:00:59 - <Perf> - Builtin MPM "other IP packet": 0
+1/1/2025 -- 17:00:59 - <Perf> - AppLayer MPM "toserver http_uri (http)": 1
+1/1/2025 -- 17:00:59 - <Perf> - AppLayer MPM "toserver http_uri (http2)": 1
+1/1/2025 -- 17:00:59 - <Info> - unable to find af-packet config for interface "eth0" or "default", using default values
+1/1/2025 -- 17:00:59 - <Perf> - 8 cores, so using 8 threads
+1/1/2025 -- 17:00:59 - <Perf> - Using 8 AF_PACKET threads for interface eth0
+1/1/2025 -- 17:00:59 - <Perf> - eth0: disabling tso offloading
+1/1/2025 -- 17:00:59 - <Perf> - eth0: disabling gso offloading
+1/1/2025 -- 17:00:59 - <Perf> - eth0: disabling sg offloading
+1/1/2025 -- 17:00:59 - <Config> - eth0: enabling zero copy mode by using data release call
+1/1/2025 -- 17:00:59 - <Info> - Going to use 8 thread(s)
+1/1/2025 -- 17:00:59 - <Config> - using 1 flow manager threads
+1/1/2025 -- 17:00:59 - <Config> - using 1 flow recycler threads
+1/1/2025 -- 17:00:59 - <Notice> - all 8 packet processing threads, 2 management threads initialized, engine started.
+1/1/2025 -- 17:00:59 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
+1/1/2025 -- 17:00:59 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
+1/1/2025 -- 17:01:00 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
+1/1/2025 -- 17:01:00 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
+1/1/2025 -- 17:01:00 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
+1/1/2025 -- 17:01:00 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
+1/1/2025 -- 17:01:00 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
+1/1/2025 -- 17:01:00 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
+1/1/2025 -- 17:01:00 - <Info> - All AFP capture threads are running.
