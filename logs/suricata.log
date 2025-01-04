@@ -2542,3 +2542,22 @@
 2/1/2025 -- 21:23:26 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
 2/1/2025 -- 21:23:26 - <Perf> - AF_PACKET RX Ring params: block_size=32768 block_nr=13 frame_size=1600 frame_nr=260
 2/1/2025 -- 21:23:26 - <Info> - All AFP capture threads are running.
+2/1/2025 -- 22:22:08 - <Notice> - Signal Received.  Stopping engine.
+2/1/2025 -- 22:22:08 - <Perf> - 0 new flows, 0 established flows were timed out, 0 flows in closed state
+2/1/2025 -- 22:22:09 - <Info> - time elapsed 3523.016s
+2/1/2025 -- 22:22:09 - <Perf> - 688 flows processed
+2/1/2025 -- 22:22:09 - <Perf> - (W#01-eth0) Kernel: Packets 876, dropped 0
+2/1/2025 -- 22:22:09 - <Perf> - (W#02-eth0) Kernel: Packets 902, dropped 0
+2/1/2025 -- 22:22:09 - <Perf> - (W#03-eth0) Kernel: Packets 761, dropped 0
+2/1/2025 -- 22:22:09 - <Perf> - (W#04-eth0) Kernel: Packets 739, dropped 0
+2/1/2025 -- 22:22:09 - <Perf> - (W#05-eth0) Kernel: Packets 871, dropped 0
+2/1/2025 -- 22:22:09 - <Perf> - (W#06-eth0) Kernel: Packets 906, dropped 0
+2/1/2025 -- 22:22:09 - <Perf> - (W#07-eth0) Kernel: Packets 793, dropped 0
+2/1/2025 -- 22:22:09 - <Perf> - (W#08-eth0) Kernel: Packets 883, dropped 0
+2/1/2025 -- 22:22:09 - <Perf> - ippair memory usage: 422144 bytes, maximum: 16777216
+2/1/2025 -- 22:22:09 - <Perf> - host memory usage: 406144 bytes, maximum: 16777216
+2/1/2025 -- 22:22:09 - <Info> - cleaning up signature grouping structure... complete
+2/1/2025 -- 22:22:09 - <Notice> - Stats for 'eth0':  pkts: 6731, drop: 0 (0.00%), invalid chksum: 0
+2/1/2025 -- 22:22:09 - <Perf> - eth0: restoring tso offloading
+2/1/2025 -- 22:22:09 - <Perf> - eth0: restoring gso offloading
+2/1/2025 -- 22:22:09 - <Perf> - eth0: restoring sg offloading
