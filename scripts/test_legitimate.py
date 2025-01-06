@@ -17,14 +17,19 @@ def test_database():
     """Effettua query legittime al database"""
     print("Eseguo query legittime al database...")
     try:
+        # psycopg2.connect() crea una connessione al database PostgreSQL
         conn = psycopg2.connect(
             dbname="testdb",
             user="testuser",
             password="testpass",
             host="db"
         )
+        # Crea un cursore per eseguire query
         cur = conn.cursor()
+
         cur.execute("SELECT * FROM users;")
+
+        # Recupera tutti i risultati
         results = cur.fetchall()
         print(f"Risultati query: {results}")
         cur.close()

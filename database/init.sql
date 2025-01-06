@@ -9,5 +9,5 @@ CREATE TABLE users (
 -- Inserisce alcuni dati di esempio
 INSERT INTO users (username, password, email) 
 VALUES 
-    ('admin', 'admin123', 'admin@example.com'),
-    ('user1', 'pass123', 'user1@example.com');
+    ('admin', 'admin123', 'admin@unina.it'),
+    ('user1', 'pass123', 'user1@unina.it');

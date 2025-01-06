@@ -17,6 +17,8 @@ COPY nginx.conf /etc/nginx/nginx.conf
 
 # Crea il file .htpasswd con credenziali admin:admin123
 RUN htpasswd -bc /etc/nginx/.htpasswd admin admin123
+# l'opzione -b specifica che la password viene fornita direttamente (non viene richiesta interattivamente)
+# l'opzione -c crea un nuovo file .htpasswd
 
 # Permessi corretti
 RUN chmod 644 /etc/nginx/.htpasswd

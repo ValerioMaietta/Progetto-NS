@@ -4,6 +4,8 @@ services:
   web:
     container_name: web
     build: ./web
+    ports:
+      - '8080:80'
     networks:
       security_network:
         ipv4_address: 172.18.0.2
@@ -15,6 +17,8 @@ services:
       POSTGRES_DB: testdb
       POSTGRES_USER: testuser
       POSTGRES_PASSWORD: testpass
+    ports:
+      - '5432:5432'
     networks:
       security_network:
         ipv4_address: 172.18.0.3
@@ -25,13 +29,13 @@ services:
     volumes:
       - ./suricata/rules:/etc/suricata/rules:ro
       - ./logs:/var/log/suricata:rw
-    network_mode: 'container:web'
+    network_mode: 'container:web' # per permettere a Suricata di vedere tutto il traffico del web server
     depends_on:
-      - web
-    privileged: true
+      - web # aspetta che 'web' sia avviato
+    privileged: true # permessi necessari per monitorare il traffico di rete
     cap_add:
-      - NET_ADMIN
-      - NET_RAW
+      - NET_ADMIN # serve perché Suricata ha bisogno di mettere l'interfaccia di rete in modalità promiscua per vedere tutto il traffico
+      - NET_RAW # per leggere i pacchetti di rete a livello più basso possibile
 
   client:
     container_name: client
@@ -49,9 +53,9 @@ services:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.9.3
     container_name: elasticsearch
     environment:
-      - discovery.type=single-node
-      - 'ES_JAVA_OPTS=-Xms512m -Xmx512m'
-      - xpack.security.enabled=false
+      - discovery.type=single-node # singolo nodo perché è un ambiente di test
+      - 'ES_JAVA_OPTS=-Xms512m -Xmx512m' # impostiamo la memoria minima e massima a 512MB
+      - xpack.security.enabled=false # disabilitiamo la sicurezza per semplificare la configurazione ed evitare problemi di autenticazione con Filebeat e Kibana
     ports:
       - '9200:9200'
     networks:
@@ -84,7 +88,7 @@ services:
       - ./logs:/var/log/suricata:ro
     depends_on:
       elasticsearch:
-        condition: service_healthy
+        condition: service_healthy # verifica che elasticsearch passi l'healthcheck definito sopra
     networks:
       security_network:
         ipv4_address: 172.18.0.7

@@ -1,14 +1,17 @@
 %YAML 1.1
 ---
+# Definizione delle reti
 vars:
   address-groups:
-    HOME_NET: '[172.18.0.0/16]'
-    EXTERNAL_NET: 'any'
+    HOME_NET: '[172.18.0.0/16]' # La nostra rete Docker che vogliamo monitorare
+    EXTERNAL_NET: 'any' # Qualsiasi rete esterna
 
+# Percorso delle regole e file delle regole
 default-rule-path: /etc/suricata/rules
 rule-files:
   - custom.rules
 
+# Configurazione degli output
 outputs:
   - fast:
       enabled: yes
@@ -30,6 +33,7 @@ app-layer:
         default-config:
           personality: IDS
 
+#Per gli eventi relativi a suricata (file suricata.log)
 logging:
   default-log-level: debug
   outputs:
