@@ -1,4 +1,4 @@
-# Progetto Network Security
+# Progetto Network Security (Danilo Romano/Valerio Maietta)
 
 ## Panoramica
 
